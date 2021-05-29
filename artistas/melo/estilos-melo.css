@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: background rgb(57,225,116);
+    background: linear-gradient(180deg, rgba(57,225,116,1) 0%, rgba(60,115,215,1) 51%, rgba(131,62,217,1) 100%);
+    min-height: 100vh;
+}
+
+.display{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* HEADER */
+
+body header{
+    size: cover;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.header{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+/* transformaciones del header */
+
+.hover-index:hover{
+    color: #39e174;
+    transition: 0.5s;
+}
+
+.hover-nosotros:hover{
+    color: #39a4ac;
+    transition: 0.5s;
+}
+
+.hover-expos-anteriores:hover{
+    color: #3c73d7;
+    transition: 0.5s;
+}
+
+.hover-artistas:hover{
+    color: #674cd9;
+    transition: 0.5s;
+}
+
+.hover-open-call:hover{
+    color: #833ed9;
+    transition: 0.5s;
+}
+
+/* MAIN */
+
+h2{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align:left;
+}
+
+.fondoh2{
+    background-color: rgba(255, 255, 255, 0.219);
+    padding: 20px;
+}
+
+.contenedor-padre{
+    margin: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-content: center;
+    grid-auto-flow: row;
+}
+
+.contenedor-hijo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.fondo-section{
+    background-color: rgba(255, 255, 255, 0.219);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.estilo-h3{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    font-weight: 300;
+}
+
+.letras-p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 15px 0px 15px 0px;
+}
+
+section a{
+    text-decoration: underline 1px;
+    color: black;
+}
+
+/* FOOTER */
+
+.footer{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: 300;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
