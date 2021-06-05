@@ -2,60 +2,109 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    min-height: 100vh;
+    background-color: background rgb(57,225,116);
+    background: linear-gradient(180deg, rgba(57,225,116,1) 0%, rgba(60,115,215,1) 51%, rgba(131,62,217,1) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
 html{
     font-size: 62.5%;
 }
 
-body{
-    min-height: 100vh
-}
-
-.display{
+.coso{
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
 /* HEADER */
-    
-body header{
+
+/* tamaño grande */
+
+i{
+    margin: 0px 0px 0px 15px;
+}
+
+ .estilo-desktop{
     font-family: 'Roboto Mono', monospace;
     font-size: 17px;
     font-weight: 200;
-}
-
-.header{
     background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-header a{
-    text-decoration: none;
+.estilo-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.estilo-li{
+    margin: 0px 15px 0px 15px;
+    text-decoration:none;
     color: white;
+    list-style: none;
+}
+
+.decoracion-header{
+    text-decoration:none;
+    color: white;
+}
+
+/* tamaño chico */
+
+.dropdown{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    font-weight: 200;
+    background-color: black;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-item{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+@media (max-width: 768px){
+    .dropdown{
+        display: flex;
+    }
+    .nav-desktop{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .dropdown{
+        display: none;
+    }
 }
 
 /* transformaciones del header */
 
-.hover-index:hover{
+.hover-nosotros:hover{
     color: #39e174;
     transition: 0.5s;
 }
 
-.hover-nosotros:hover{
-    color: #39a4ac;
-    transition: 0.5s;
-}
-
 .hover-expos-anteriores:hover{
-    color: #3c73d7;
-    transition: 0.5s;
-}
-
-.hover-artistas:hover{
-    color: #674cd9;
+    color: #39a4ac;
     transition: 0.5s;
 }
 
@@ -65,11 +114,6 @@ header a{
 }
 
 /* MAIN */
-
-.fondo{
-    background: rgb(57,225,116);
-    background: linear-gradient(180deg, rgba(57,225,116,1) 0%, rgba(60,115,215,1) 51%, rgba(131,62,217,1) 100%);;
-}
 
 h2{
     font-family: 'Major Mono Display', monospace;
@@ -82,18 +126,47 @@ h2{
     padding:20px;
 }
 
-.contenedor{
-    padding: 20px 10px 20px 10px;
+@media (max-width: 768px){
+    h2{
+        font-size: 40px;
+        text-align: center; 
+    }
+}
 
+@media (max-width: 576px){
+    h2{
+    font-size: 35px;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    }
+}
+
+.contenedor{
+    margin: 15px 60px 15px 60px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 576px){
+    .contenedor{
+        margin: 15px 30px 15px 30px
+    }
 }
 
 .contenedor-hijo{
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.219);
+    padding:20px;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+@media (max-width: 768px){
+    .contenedor-hijo{
+        padding: 10px;
+    }
 }
 
 img{
@@ -102,19 +175,19 @@ img{
     border-radius: 7px;
 }
 
-.fondo-textos{
-    background-color: rgba(255, 255, 255, 0.219);
-    padding: 20px;
-    border-radius: 7px;
+@media (max-width: 576px){
+    img{
+        width: 200px ;
+        height: 200px;
+    }
 }
 
 .parrafos{
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     font-weight: 300;
-    text-align: center;
-    margin: 10px;
     color: black;
+    text-align: center;
 }
 
 /* FOOTER */

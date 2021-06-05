@@ -92,6 +92,7 @@ iframe{
     height: 300px;
     border: black solid 1px;
     border-radius: 7px;
+    box-sizing: border-box;
 }
 
 main div{
