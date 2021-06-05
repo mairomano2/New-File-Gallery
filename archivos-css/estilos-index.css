@@ -5,6 +5,7 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body{
@@ -20,48 +21,92 @@ body{
     background-image:url(./fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 20%;
+    background-position: center;
 }
 
  /* HEADER */
 
- .header{
+/* tamaño grande */
+i{
+    margin: 0px 0px 0px 15px;
+}
+
+ .estilo-desktop{
     font-family: 'Roboto Mono', monospace;
     font-size: 17px;
     font-weight: 200;
-    
     background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
 }
 
-header a{
+.estilo-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+.estilo-li{
+    margin: 0px 15px 0px 15px;
+}
+
+.decoracion-header{
     text-decoration: none;
     color: white;
 }
 
+/* tamaño chico */
+
+.dropdown{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    font-weight: 200;
+    background-color: black;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-item{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+@media (max-width: 767px){
+    .dropdown{
+        display: flex;
+    }
+    .nav-desktop{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .dropdown{
+        display: none;
+    }
+}
+
 /* transformaciones del header */
 
-.hover-index:hover{
+.hover-nosotros:hover{
     color: #39e174;
     transition: 0.5s;
 }
 
-.hover-nosotros:hover{
-    color: #39a4ac;
-    transition: 0.5s;
-}
-
 .hover-expos-anteriores:hover{
-    color: #3c73d7;
-    transition: 0.5s;
-}
-
-.hover-artistas:hover{
-    color: #674cd9;
+    color: #39a4ac;
     transition: 0.5s;
 }
 
@@ -72,65 +117,77 @@ header a{
 
 /* MAIN */
 
+header li{
+    list-style: none;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
 h1{
     font-family: 'Major Mono Display', monospace;
+    color: black;
     font-weight: normal;
     font-size: 80px;
     text-align:center;
     background-color: rgba(255, 255, 255, 0.219);
-    padding: 20px ;
+    padding: 15px;
+    margin: 0px;
 }
 
-section h2{
-    font-family: 'Roboto Mono', monospace;
+@media (max-width: 768px){
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 320px){
+    h1{
+        font-size: 40px;
+    }
+}
+
+h2{
+    font-weight: bold;
+}
+
+.letras-box{
     color: black;
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-section p{
-    text-decoration:underline 1px black;
-    color: black;
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    margin: 15px;
 }
 
-.salas{
-    text-decoration: none ;
-    color:black;
-    font-weight:bolder;
+@media (max-width: 768px){
+    .letras-box{
+        width: fit-content;
+    }
 }
 
 .estilo-box{
+    margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.219) ;
-    width: 350px;
-    height: 200px;
     border-radius: 7px;
-    margin: 50px;
     transition: 0.5s;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.posicion{
-    justify-content: space-around;
-    display: flex;
-    flex-flow: row wrap;
-}
-
 /* transformaciones en el main */
 
-main div section:hover{
+.hover:hover{
     background-color: rgba(255, 255, 255, 0.521) ;
-    transform: scale(1.02);
 }
-
-.transformacion{
-    transform: translateY(20px);
-    transition: 0.5s;
+main a:hover{
+    color: white;
 }
 
 /* FOOTER */
@@ -147,4 +204,8 @@ main div section:hover{
 footer a{
     text-decoration: none;
     color: white;
+}
+
+footer p{
+    margin: 0px;
 }
