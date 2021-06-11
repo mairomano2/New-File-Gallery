@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>New File - Exposiciones permanentes</title>
 
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
         <!-- FUENTE H2 -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -13,62 +18,72 @@
         <!-- FUENTE HEADER Y MAIN -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-
-        <!-- BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"> </script>
         
-        <link rel="stylesheet" href="./archivos-css/artistas.css">
+        <link rel="stylesheet" href="./archivos-css/estilos-artistas.css">
     </head>
     <body class="display">
-        <header>
+        <header> 
             <nav>
-                <ul class="header"> 
-                <li> <a href="index.html" class="hover-index"> Inico </a></li>
-                <li> <a href="nosotros.html" class="hover-nosotros"> Nosotros</a> </li>
-                <li> <a href="expos-anteriores.html" class="hover-expos-anteriores"> Expos anteriores </a></li>
-                <li> <a href="artistas.html" class="hover-artistas"> Artistas</a></li>
-                <li> <a href="open-call.html" class="hover-open-call"> Open call </a> </li>
-                </ul>
+                <!-- TAMAÑOS CHICOS -->
+                <div class="dropdown">
+                    <a href="index.html"><i class="bi bi-house home" style="font-size: 15px; color: white;"></i></a>
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                            <li><a class="dropdown-item" href="expos-anteriores.html">Expos anterioes</a></li>
+                            <li><a class="dropdown-item" href="open-call.html">Open call</a></li>
+                        </ul>
+                </div>
+                <!-- TAMAÑOS GRANDES -->
+                <div class="nav-desktop estilo-desktop">
+                    <div>
+                        <a href="index.html"><i class="bi bi-house home" style="font-size: 20px; color: white;"></i></a>
+                    </div>
+                    <ul class="estilo-ul"
+                        <li class="estilo-li"> <a href="nosotros.html" class="hover-nosotros decoracion-header"> Nosotros</a> </li>
+                        <li class="estilo-li"> <a href="expos-anteriores.html" class="hover-expos-anteriores decoracion-header"> Expos anteriores </a></li>
+                        <li class="estilo-li"> <a href="open-call.html" class="hover-open-call decoracion-header"> Open call </a> </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         
         <main class="container-fluid">
             <h2 class="fondoh2">Exposiciones Permanentes</h2>
-            <div class="row contenedor-padre justify-content-center">
-                <div class="aling-items-center col-md-4 contenedor-hijo "> 
+            <div class="row contenedor-padre justify-content-space-around">
+                <div class="aling-items-center col-md-4 col-s-6 contenedor-hijo "> 
                     <div class="artista-individual">
-                    <img src="./Artistas/Roy Eden/roy-eden.png" alt="foto del artista" height="150px" width="150px">
+                    <img src="./Artistas/Roy Eden/roy-eden.png" alt="foto del artista">
                     <a href="Artistas/Roy Eden/Roy-Eden.html">Roy Eden</a>
                     </div>
                 </div>
-                <div class="aling-items-center col-md-4 contenedor-hijo "> 
+                <div class="aling-items-center col-md-4 col-s-6 contenedor-hijo "> 
                     <div class="artista-individual">
-                        <img src="./Artistas/Rosario Amendolara/Rosario Amendolara.png" alt="foto del artista" height="150px" width="150px">
+                        <img src="./Artistas/Rosario Amendolara/Rosario Amendolara.png" alt="foto del artista">
                         <a href="./Artistas/Rosario Amendolara/Rosario.html">Rosario Amendolara</a>
                     </div>
                 </div>
-                <div class="aling-items-center col-md-4 contenedor-hijo "> 
+                <div class="aling-items-center col-md-4 col-s-6 contenedor-hijo "> 
                     <div class="artista-individual">
-                        <img src="./artistas/Cata Gonzalez Rossi/foto.png" alt="foto del artista" height="150px" width="150px">
+                        <img src="./artistas/Cata Gonzalez Rossi/foto.png" alt="foto del artista">
                         <a href="artistas/Cata Gonzalez Rossi/CataGonzalesRossi.html">Cata Gonzales Rossi</a>
                     </div>
                 </div>
-                <div class="aling-items-center col-md-4 contenedor-hijo "> 
+                <div class="aling-items-center col-md-4 col-s-6 contenedor-hijo "> 
                     <div class="artista-individual">
-                        <img src="./artistas/giuli-duarte/foto-artista.png" alt="foto del artista" height="150px" width="150px">
+                        <img src="./artistas/giuli-duarte/foto-artista.png" alt="foto del artista">
                         <a href="artistas/giuli-duarte/giuli-duarte.html">Giuli Duarte</a>
                     </div>
                 </div>
-                <div class="aling-items-center col-md-4 contenedor-hijo "> 
+                <div class="aling-items-center col-md-4 col-s-6 contenedor-hijo "> 
                     <div class="artista-individual">
-                        <img src="./artistas/federico-andrade/P1180111.png" alt="foto del artista" height="150px" width="150px">
+                        <img src="./artistas/federico-andrade/P1180111.png" alt="foto del artista">
                         <a href="artistas/federico-andrade/federico-andrade.html">Federico Andrade</a>
                     </div>
                 </div>
-                <div class="aling-items-center col-md-4 contenedor-hijo "> 
+                <div class="aling-items-center col-md-4 col-s-6 contenedor-hijo "> 
                     <div class="artista-individual">
-                        <img src="artistas/melo/icon2_Mesa de trabajo 1.png" alt="foto del artista" height="150px" width="150px">
+                        <img src="artistas/melo/icon2_Mesa de trabajo 1.png" alt="foto del artista">
                         <a href="artistas/melo/melo.html">Melo</a>
                     </div>
                 </div>
