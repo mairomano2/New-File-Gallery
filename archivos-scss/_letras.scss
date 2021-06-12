@@ -1,0 +1,55 @@
+$color-fondo: rgba(255, 255, 255, 0.219);
+
+h2{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+@media (max-width: 768px){
+    h2{
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+.fondoh2{
+    background-color: $color-fondo;
+    padding:20px;
+}
+
+.fondo-section{
+    background-color: $color-fondo;
+    margin: 15px 60px 15px 60px;
+    border-radius: 7px;
+    padding: 15px;
+}
+        
+@media (max-width: 576px){
+        .fondo-section{
+            margin: 10px 10px 10px 10px;
+        }
+    }
+    
+.estilo-h3{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    font-weight: 300;   
+}
+ 
+.letras-p{
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+
+    a{
+        color: black;
+    }
+}
+
+
+

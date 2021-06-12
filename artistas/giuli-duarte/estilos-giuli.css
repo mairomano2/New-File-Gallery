@@ -19,46 +19,97 @@ body{
 
 /* HEADER */
 
-body header{
-    size: cover;
+/* tamaño grande */
+i{
+    margin: 0px 0px 0px 15px;
+}
+
+ .estilo-desktop{
     font-family: 'Roboto Mono', monospace;
     font-size: 17px;
     font-weight: 200;
-}
-
-.header{
     background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-header a{
-    text-decoration: none;
+.estilo-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+
+}
+
+.estilo-li{
+    margin: 0px 15px 0px 15px;
+    text-decoration:none;
     color: white;
+    list-style: none;
+}
+
+.decoracion-header{
+    text-decoration:none;
+    color: white;
+}
+
+/* tamaño chico */
+
+.dropdown{
+    height: 60px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: black;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+}
+
+.btn{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-item{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+@media (max-width: 767px){
+    .dropdown{
+        display: flex;
+    }
+    .nav-desktop{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .dropdown{
+        display: none;
+    }
 }
 
 /* transformaciones del header */
 
-.hover-index:hover{
+.hover-nosotros:hover{
     color: #39e174;
     transition: 0.5s;
 }
 
-.hover-nosotros:hover{
-    color: #39a4ac;
-    transition: 0.5s;
-}
-
 .hover-expos-anteriores:hover{
-    color: #3c73d7;
-    transition: 0.5s;
-}
-
-.hover-artistas:hover{
-    color: #674cd9;
+    color: #39a4ac;
     transition: 0.5s;
 }
 
@@ -76,27 +127,41 @@ h2{
     text-align:left;
 }
 
+@media (max-width: 768px){
+    h2{
+        font-size: 50px ;
+    }
+}
+
 .fondoh2{
     background-color: rgba(255, 255, 255, 0.219);
     padding: 20px;
 }
 
+img{
+    width: 200px;
+}
+
 .contenedor-padre{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
 }
 
-main picture{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    place-items: center;
+@media (max-width: 768px){
+    .contenedor-padre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        }
 }
 
-main div{
-    padding: 20px 30px 20px 30px ;
-    color: black;
+.contenedor-hijo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .fondo-section{
@@ -110,8 +175,14 @@ main div{
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
     margin-bottom: 10px;
-    margin-top: 7px;
     font-weight: 300;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .estilo-h3{
+        font-size: 35px;
+    }
 }
 
 .letras-p{
@@ -121,9 +192,19 @@ main div{
     margin: 15px 0px 15px 0px;
 }
 
+@media (max-width: 425px){
+    .letras-p{
+        font-size: 2.5rem;
+    }
+}
+
 section a{
     text-decoration: underline 1px;
     color: black;
+}
+
+.redes{
+    text-align: center;
 }
 
 /* FOOTER */
@@ -135,6 +216,16 @@ section a{
     color: white;
     padding: 10px;
     font-weight: 300;
+}
+
+@media (max-width:768px){
+    .footer{
+        font-size: 20px;
+    }
+}
+
+footer p{
+    margin: 0px;
 }
 
 footer a{

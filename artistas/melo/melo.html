@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New File - Federico Andrade</title>
+    <title>New File - Melo</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <!-- FUENTE H1 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -19,13 +25,27 @@
 <body class="display">
     <header> 
         <nav>
-            <ul class="header"> 
-                <li> <a href="../../Index.html" class="hover-index"> Inico </a></li>
-                <li> <a href="../../Nosotros.html" class="hover-nosotros"><span> Nosotros </span></a> </li>
-                <li> <a href="../../expos-anteriores.html" class="hover-expos-anteriores">Expos anteriores </a></li>
-                <li> <a href="../../Artistas.html" class="hover-artistas"> Artistas</a></li>
-                <li> <a href="../../Open_call.html" class="hover-open-call"> Open call </a> </li>
-            </ul>
+            <!-- TAMAÑOS CHICOS -->
+            <div class="dropdown">
+                <a href="../../index.html"><i class="bi bi-house home" style="font-size: 30px; color: white;"></i></a>
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="../../nosotros.html">Nosotros</a></li>
+                        <li><a class="dropdown-item" href="../../expos-anteriores.html">Expos anterioes</a></li>
+                        <li><a class="dropdown-item" href="../../open-call.html">Open call</a></li>
+                    </ul>
+            </div>
+            <!-- TAMAÑOS GRANDES -->
+            <div class="nav-desktop estilo-desktop">
+                <div>
+                    <a href="../../index.html"><i class="bi bi-house home" style="font-size: 20px; color: white;"></i></a>
+                </div>
+                <ul class="estilo-ul"
+                    <li class="estilo-li"> <a href="../../nosotros.html" class="hover-nosotros decoracion-header"> Nosotros</a> </li>
+                    <li class="estilo-li"> <a href="../../expos-anteriores.html" class="hover-expos-anteriores decoracion-header"> Expos anteriores </a></li>
+                    <li class="estilo-li"> <a href="../../open-call.html" class="hover-open-call decoracion-header"> Open call </a> </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -33,14 +53,45 @@
         <h2 class="fondoh2">Melo</h2>
         <div class="contenedor-padre">
             <div>
-                <picture>
-                    <img src="chiques y chiques de pelo corto-01.jpg" alt="varios objetos junto a una descripcion "width="600px">
-                    <img src="COWBOY jpg.jpg" alt="varios objetos junto a una descripcion "width="600px">
-                    <img src="crack_Mesa de trabajo 1.jpg" alt="varios objetos junto a una descripcion "width="600px">
-                    <img src="Riedel 1-01.jpg" alt="varios objetos junto a una descripcion "width="600px">
-                    <img src="visibilidad lesbica_Mesa de trabajo 1.jpg" alt="varios objetos junto a una descripcion "width="600px">
-                    <img src="yo diablita violeta-01.png" alt="varios objetos junto a una descripcion "width="600px">
-                </picture>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="chiques y chiques de pelo corto-01.jpg" class="d-block w-1" alt="..." width="600px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="COWBOY jpg.jpg" class="d-block w-1" alt="..." width="600px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="crack_Mesa de trabajo 1.jpg" class="d-block w-1" alt="..." width="600px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Riedel 1-01.jpg" class="d-block w-1" alt="..." width="600px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="visibilidad lesbica_Mesa de trabajo 1.jpg" class="d-block w-1" alt="..." width="600px">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="yo diablita violeta-01.png" class="d-block w-1" alt="..." width="600px">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
             <div>
                 <section class="fondo-section">
@@ -48,17 +99,17 @@
                     <p class="letras-p">Melo nació en Buenos Aires en 1998 y es un estudiante (frustrado) de diseño gráfico. Inevitablemente trans, lógicamente no binarie, lesbiana por ocupación. Militante de sus amigues y de CFK. Intento de freelancer e ilustrador, expusó en Casa Brandon (2019) y en el Centro Cultural Kirchner (2020). Sus planes a futuro incluyen ser una vieja torta y muchos gatitos.</p>
                 </section>
                 <section class="fondo-section">
-                    <h3 class="estilo-h3">Redes de la artista </h3>
-                    <a href="https://www.instagram.com/melo_dibuja/" class="letras-p">Instagram</a>
-                    <a href="https://camilodibuja.flashcookie.com/" class="letras-p">Tienda online</a>
-                    <a href="https://cafecito.app/melomelo" class="letras-p">Cafecito</a>
+                    <h3 class="estilo-h3">Redes de le artista </h3>
+                    <p class="redes"><a href="https://www.instagram.com/melo_dibuja/" class="letras-p">Instagram</a></p>
+                    <p class="redes"><a href="https://camilodibuja.flashcookie.com/" class="letras-p">Tienda online</a></p>
+                    <p class="redes"><a href="https://cafecito.app/melomelo" class="letras-p">Cafecito</a></p>
                 </section>
             </div>
         </div>
     </main>
 
     <footer class="footer">
-        <p>Contacto: <a href="https://www.instagram.com/new_file_galery_/" class="letras-p">Instagram</a></p> 
+        <p>Contacto: <a href="https://www.instagram.com/new_file_galery_/">Instagram</a></p> 
     </footer>
 
 </body>

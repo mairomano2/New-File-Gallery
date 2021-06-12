@@ -1,0 +1,17 @@
+@import "header";
+@import "footer";
+@import "resets";
+@import "letras";
+
+.h3-nosotros{
+    @extend.estilo-h3;
+    text-align: left;
+}
+
+.letras-p{
+    @extend.text-align-left;
+}
+
+a{
+    color: black;
+}

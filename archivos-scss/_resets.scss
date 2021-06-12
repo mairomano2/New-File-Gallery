@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+.display{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    background-color: background rgb(57,225,116);
+    background: linear-gradient(180deg, rgba(57,225,116,1) 0%, rgba(60,115,215,1) 51%, rgba(131,62,217,1) 100%);
+}
+
+body{
+    min-height: 100vh
+}

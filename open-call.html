@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New File - Open call</title>
 
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <!-- FUENTE DEL H2 -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
@@ -16,29 +21,48 @@
 
     <link rel="stylesheet" href="./archivos-css/estilos-open-call.css">
 </head>
-<body class="display">
-    <header>
+<body class="coso">
+    <header> 
         <nav>
-            <ul class="header"> 
-                <li> <a href="index.html" class="hover-index"> Inico </a></li>
-                <li> <a href="nosotros.html" class="hover-nosotros"> Nosotros</a> </li>
-                <li> <a href="expos-anteriores.html" class="hover-expos-anteriores"> Expos anteriores </a></li>
-                <li> <a href="artistas.html" class="hover-artistas"> Artistas</a></li>
-                <li> <a href="open-call.html" class="hover-open-call"> Open call </a> </li>
-            </ul>
+            <!-- TAMAÑOS CHICOS -->
+            <div class="dropdown">
+                <a href="index.html"><i class="bi bi-house home" style="font-size: 15px; color: white;"></i></a>
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="dropdown-item" href="expos-anteriores.html">Expos anterioes</a></li>
+                        <li><a class="dropdown-item" href="open-call.html">Open call</a></li>
+                    </ul>
+            </div>
+            <!-- TAMAÑOS GRANDES -->
+            <div class="nav-desktop estilo-desktop">
+                <div>
+                    <a href="index.html"><i class="bi bi-house home" style="font-size: 20px; color: white;"></i></a>
+                </div>
+                <ul class="estilo-ul"
+                    <li class="estilo-li"> <a href="nosotros.html" class="hover-nosotros decoracion-header"> Nosotros</a> </li>
+                    <li class="estilo-li"> <a href="expos-anteriores.html" class="hover-expos-anteriores decoracion-header"> Expos anteriores </a></li>
+                    <li class="estilo-li"> <a href="open-call.html" class="hover-open-call decoracion-header"> Open call </a> </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main class="main">
-        <h2 class="fondoh2">Open call</h2>
-        <section class="section">
-            <p class="letras-p">En New File estamos constantemente buscando abrirnos a nuevos proyectos. Por eso, si te interesa mandarnos tu material te invitamos a ponerte en contacto con nosotros via Instagram </p>
-            <a href="https://www.instagram.com/new_file_galery_/" target="_blank" class="instagram">Esperamos tu mensaje :)</a>
-        </section>  
+    <main class="fondo">
+            <h2 class="fondoh2">Open Call</h2>
+            <div class="contenedor">
+                <div class="contenedor-hijo">
+                    <p class="parrafos">En New File estamos constantemente buscando abrirnos a nuevos proyectos. Por eso, si te interesa mandarnos tu material tanto para la muestra permanente como la muestra mensual, te invitamos a ponerte en contacto con nosotros via <a href="https://www.instagram.com/new_file_galery_/" target="_blank">Instagram</a>.</p>
+                    <p class="parrafos">Esperamos tu mensaje :)</p>
+                </div
+                <div>
+                    <img src="artistas/melo/yo diablita violeta-01.png" alt="meme del gatito diciendo estoy chikito">
+                </div>
+            </div>
     </main>
     
     <footer class="footer">
-        <p class="letras-p">Contacto: <a href="https://www.instagram.com/new_file_galery_/">Instagram</a></p> 
+        <p>Contacto: <a href="https://www.instagram.com/new_file_galery_/">Instagram</a></p> 
    </footer>
 </body>
 </html>
