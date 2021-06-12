@@ -15,7 +15,7 @@ html{
     font-size: 62.5%;
 }
 
-.coso{
+.display{
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
@@ -23,7 +23,6 @@ html{
 /* HEADER */
 
 /* tamaño grande */
-
 i{
     margin: 0px 0px 0px 15px;
 }
@@ -38,6 +37,7 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
 }
 
 .estilo-ul{
@@ -49,13 +49,10 @@ i{
 
 .estilo-li{
     margin: 0px 15px 0px 15px;
-    text-decoration:none;
-    color: white;
-    list-style: none;
 }
 
 .decoracion-header{
-    text-decoration:none;
+    text-decoration: none;
     color: white;
 }
 
@@ -64,11 +61,16 @@ i{
 .dropdown{
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
     font-weight: 200;
     background-color: black;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px 10px 20px;
+}
+
+.menu{
+    font-size: 20px;
+    color: white;
 }
 
 .dropdown-menu{
@@ -78,8 +80,9 @@ i{
 .dropdown-item{
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
 }
 
 @media (max-width: 767px){

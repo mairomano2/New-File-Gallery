@@ -34,6 +34,7 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
 }
 
 .estilo-ul{
@@ -45,33 +46,28 @@ i{
 
 .estilo-li{
     margin: 0px 15px 0px 15px;
-    text-decoration:none;
-    color: white;
-    list-style: none;
 }
 
 .decoracion-header{
-    text-decoration:none;
+    text-decoration: none;
     color: white;
 }
 
 /* tamaño chico */
 
 .dropdown{
-    height: 60px;
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
     font-weight: 200;
     background-color: black;
     justify-content: space-between;
-    padding: 10px 20px 10px 20px;
     align-items: center;
+    padding: 10px 20px 10px 20px;
 }
 
-.btn{
+.menu{
     font-size: 20px;
-    margin: 10px;
+    color: white;
 }
 
 .dropdown-menu{
@@ -81,8 +77,9 @@ i{
 .dropdown-item{
     color: white;
     font-family: 'Roboto Mono', monospace;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
+    padding: 20px;
 }
 
 @media (max-width: 767px){
@@ -204,7 +201,7 @@ iframe{
     margin: 15px 0px 15px 0px;
 }
 
-@media (max-width: 425px){
+@media (max-width: 500px){
     .letras-p{
         font-size: 2.5rem;
     }
