@@ -1,0 +1,52 @@
+@import "resets";
+@import "header";
+@import "letras";
+@import "footer";
+
+.contenedor-padre{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 7px;
+}
+
+.contenedor-hijo{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+@media (max-width: 425px){
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    .contenedor-hijo{
+        font-size: 25px;
+    }
+}
+
+.contenedor-hijo:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+    transition: 0.5s;
+}
+
+.artista-individual{
+    display: flex;
+    flex-flow: column;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+main a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}

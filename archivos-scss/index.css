@@ -1,0 +1,237 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.display {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  background-color: background #39e174;
+  background: -webkit-gradient(linear, left top, left bottom, from(#39e174), color-stop(51%, #3c73d7), to(#833ed9));
+  background: linear-gradient(180deg, #39e174 0%, #3c73d7 51%, #833ed9 100%);
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* tamaño grande */
+i {
+  margin: 0px 0px 0px 15px;
+}
+
+.estilo-desktop {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 17px;
+  font-weight: 200;
+  background-color: black;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.estilo-desktop .estilo-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0px;
+}
+
+.estilo-desktop .estilo-ul .estilo-li {
+  margin: 0px 15px 0px 15px;
+  list-style: none;
+  color: white;
+}
+
+.estilo-desktop .estilo-ul .decoracion-header {
+  text-decoration: none;
+  color: white;
+}
+
+.estilo-desktop .estilo-ul .hover-nosotros:hover {
+  color: #39e174;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.estilo-desktop .estilo-ul .hover-expos-anteriores:hover {
+  color: #39a4ac;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.estilo-desktop .estilo-ul .hover-open-call:hover {
+  color: #833ed9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* tamaño chico */
+.dropdown {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  font-weight: 200;
+  background-color: black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+
+.dropdown .dropdown-menu {
+  background-color: black;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+@media (max-width: 767px) {
+  .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    display: none;
+  }
+}
+
+/* FOOTER */
+.footer {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: 300;
+}
+
+footer p {
+  margin: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.fondo {
+  background-image: url(../archivos-css/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  color: black;
+  font-weight: normal;
+  font-size: 80px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.219);
+  padding: 15px;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  h1 h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.letras-box {
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px;
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+  .letras-box .letras-box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.estilo-box {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.219);
+  border-radius: 7px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+
+/* transformaciones en el main */
+.hover:hover {
+  background-color: rgba(255, 255, 255, 0.521);
+}
+
+main a:hover {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

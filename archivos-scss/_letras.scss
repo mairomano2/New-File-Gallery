@@ -20,7 +20,7 @@ h2{
 
 .fondo-section{
     background-color: $color-fondo;
-    margin: 15px 60px 15px 60px;
+    margin: 15px;
     border-radius: 7px;
     padding: 15px;
 }
@@ -44,7 +44,6 @@ h2{
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     font-weight: 300;
-    text-align: center;
 
     a{
         color: black;

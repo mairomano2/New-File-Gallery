@@ -61,14 +61,31 @@ i {
 
 .estilo-desktop .estilo-ul .estilo-li {
   margin: 0px 15px 0px 15px;
-  text-decoration: none;
-  color: white;
   list-style: none;
+  color: white;
 }
 
 .estilo-desktop .estilo-ul .decoracion-header {
   text-decoration: none;
   color: white;
+}
+
+.estilo-desktop .estilo-ul .hover-nosotros:hover {
+  color: #39e174;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.estilo-desktop .estilo-ul .hover-expos-anteriores:hover {
+  color: #39a4ac;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.estilo-desktop .estilo-ul .hover-open-call:hover {
+  color: #833ed9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* tamaño chico */
@@ -88,7 +105,7 @@ i {
   background-color: black;
 }
 
-.dropdown .dropdown-item {
+.dropdown .dropdown-menu .dropdown-item {
   color: white;
   font-family: 'Roboto Mono', monospace;
   font-size: 12px;
@@ -110,94 +127,6 @@ i {
   .dropdown {
     display: none;
   }
-}
-
-/* transformaciones del header */
-.hover-nosotros:hover {
-  color: #39e174;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.hover-expos-anteriores:hover {
-  color: #39a4ac;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.hover-open-call:hover {
-  color: #833ed9;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-h2 {
-  font-family: 'Major Mono Display', monospace;
-  font-size: 60px;
-  font-weight: lighter;
-}
-
-@media (max-width: 768px) {
-  h2 {
-    text-align: center;
-    font-size: 50px;
-  }
-}
-
-.fondoh2 {
-  background-color: rgba(255, 255, 255, 0.219);
-  padding: 20px;
-}
-
-.fondo-section {
-  background-color: rgba(255, 255, 255, 0.219);
-  margin: 15px 60px 15px 60px;
-  border-radius: 7px;
-  padding: 15px;
-}
-
-.fondo-section .estilo-h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
-  margin-bottom: 10px;
-  margin-top: 7px;
-  font-weight: 300;
-}
-
-.fondo-section .letras-p {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-@media (max-width: 576px) {
-  .fondo-section {
-    margin: 10px 10px 10px 10px;
-  }
-}
-
-.redes {
-  text-align: center;
-  color: black;
-}
-
-/* FOOTER */
-.footer {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 13px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  font-weight: 300;
-}
-
-footer p {
-  margin: 0px;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
 }
 
 .contenedor-padre {
@@ -261,4 +190,73 @@ footer a {
     justify-items: center;
   }
 }
-/*# sourceMappingURL=expos-actuales.css.map */
+
+h2 {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+.fondoh2 {
+  background-color: rgba(255, 255, 255, 0.219);
+  padding: 20px;
+}
+
+.fondo-section {
+  background-color: rgba(255, 255, 255, 0.219);
+  margin: 15px;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+@media (max-width: 576px) {
+  .fondo-section {
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+.estilo-h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+  font-weight: 300;
+}
+
+.letras-p {
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.letras-p a {
+  color: black;
+}
+
+/* FOOTER */
+.footer {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: 300;
+}
+
+footer p {
+  margin: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=expos.css.map */
