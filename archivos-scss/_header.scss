@@ -1,10 +1,60 @@
-/* tamaño grande */
+/* tamaño chico */
 
-i{
+svg{
     margin: 0px 0px 0px 15px;
+    width: 30px;
+    height: 30px;
+    color: white;
 }
 
- .estilo-desktop{
+@media (min-width: 768px){
+    svg{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.boton-dropdown{
+    background-color: black;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+    .fondo-menu{
+        background-color: black;
+
+        .menu-item{
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 20px;
+            font-weight: 200;
+            margin: 10px;
+        }
+    }
+}
+
+.menu{
+    font-size: 15px;
+}
+
+@media (max-width: 768px){
+    .boton-dropdown{
+        display: flex;
+    }
+    .nav-desktop{
+        display: none;
+    }
+}
+
+@media (min-width: 767px){
+    .boton-dropdown{
+        display: none;
+    }
+}
+
+/* tamaño grande */
+
+.estilo-desktop{
     font-family: 'Roboto Mono', monospace;
     font-size: 17px;
     font-weight: 200;
@@ -14,79 +64,35 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    .estilo-ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: 0px;
-
-        .estilo-li{
-            margin: 0px 15px 0px 15px;
-            text-decoration:none;
-            color: white;
-            list-style: none;
-
-        }
-        .decoracion-header{
-            text-decoration:none;
-            color: white;
-        }
-    }
+    align-items: center;
 }
 
-/* tamaño chico */
+.estilo-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    align-items: center;
+    list-style: none;
+}
 
-.dropdown{
+.estilo-li{
+    margin: 0px 15px 0px 15px;
+}
+
+.decoracion-header{
+    text-decoration: none;
     color: white;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
-    font-weight: 200;
-    background-color: black;
-    justify-content: space-between;
-    padding: 10px 20px 10px 20px;
-
-    .dropdown-menu{
-        background-color: black;
-    }
-
-        .dropdown-item{
-            color: white;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 12px;
-            font-weight: 200;
-
-        }
-            /* transformaciones del header */
-
-        .hover-nosotros:hover{
-            color: #39e174;
-            transition: 0.5s;
-        }
-
-        .hover-expos-anteriores:hover{
-            color: #39a4ac;
-            transition: 0.5s;
-        }
-
-        .hover-open-call:hover{
-            color: #833ed9;
-            transition: 0.5s;
-        }
 }
 
-@media (max-width: 767px){
-    .dropdown{
-        display: flex;
-    }
-    .nav-desktop{
-        display: none;
-    }
+.boton-dropdown-desktop{
+    @extend .boton-dropdown
 }
 
-@media (min-width: 768px){
-    .dropdown{
-        display: none;
-    }
+.fondo-menu-desktop{
+    @extend .fondo-menu
 }
+
+
+
 

@@ -22,11 +22,66 @@ body {
   min-height: 100vh;
 }
 
-/* tamaño grande */
-i {
+/* tamaño chico */
+svg {
   margin: 0px 0px 0px 15px;
+  width: 30px;
+  height: 30px;
+  color: white;
 }
 
+@media (min-width: 768px) {
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.boton-dropdown {
+  background-color: black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boton-dropdown .fondo-menu {
+  background-color: black;
+}
+
+.boton-dropdown .fondo-menu .menu-item {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 10px;
+}
+
+.menu {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .boton-dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .boton-dropdown {
+    display: none;
+  }
+}
+
+/* tamaño grande */
 .estilo-desktop {
   font-family: 'Roboto Mono', monospace;
   font-size: 17px;
@@ -43,9 +98,12 @@ i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.estilo-desktop .estilo-ul {
+.estilo-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,78 +115,19 @@ i {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 0px;
-}
-
-.estilo-desktop .estilo-ul .estilo-li {
-  margin: 0px 15px 0px 15px;
-  text-decoration: none;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
-.estilo-desktop .estilo-ul .decoracion-header {
+.estilo-li {
+  margin: 0px 15px 0px 15px;
+}
+
+.decoracion-header {
   text-decoration: none;
   color: white;
-}
-
-/* tamaño chico */
-.dropdown {
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 12px;
-  font-weight: 200;
-  background-color: black;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px 20px 10px 20px;
-}
-
-.dropdown .dropdown-menu {
-  background-color: black;
-}
-
-.dropdown .dropdown-item {
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 12px;
-  font-weight: 200;
-}
-
-@media (max-width: 767px) {
-  .dropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .nav-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .dropdown {
-    display: none;
-  }
-}
-
-/* transformaciones del header */
-.hover-nosotros:hover {
-  color: #39e174;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.hover-expos-anteriores:hover {
-  color: #39a4ac;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.hover-open-call:hover {
-  color: #833ed9;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 h2 {
@@ -156,7 +155,13 @@ h2 {
   padding: 15px;
 }
 
-.fondo-section .estilo-h3 {
+@media (max-width: 576px) {
+  .fondo-section {
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+.estilo-h3 {
   font-family: 'Roboto Mono', monospace;
   font-size: 30px;
   margin-bottom: 10px;
@@ -164,20 +169,15 @@ h2 {
   font-weight: 300;
 }
 
-.fondo-section .letras-p {
+.letras-p {
+  color: black;
   font-family: 'Roboto Mono', monospace;
   font-size: 15px;
   font-weight: 300;
-}
-
-@media (max-width: 576px) {
-  .fondo-section {
-    margin: 10px 10px 10px 10px;
-  }
-}
-
-.redes {
   text-align: center;
+}
+
+.letras-p a {
   color: black;
 }
 
@@ -201,64 +201,52 @@ footer a {
 }
 
 .contenedor-padre {
-  margin: 2rem;
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contenedor-padre .contenedor-hijo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px;
-  margin: 5px 0px 5px 0px;
-}
-
-.contenedor-padre .contenedor-hijo iframe {
-  margin: 5px 0px 5px 0px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.219);
   border-radius: 7px;
 }
 
-@media (max-width: 768px) {
-  .contenedor-padre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0rem;
+.contenedor-padre .contenedor-hijo {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+@media (max-width: 425px) {
+  img {
+    width: 250px;
+    height: 250px;
+  }
+  .contenedor-hijo {
+    font-size: 25px;
   }
 }
 
-@media (max-width: 768px) {
-  .iframes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    justify-items: center;
-  }
+.contenedor-hijo:hover {
+  background-color: rgba(255, 255, 255, 0.219);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.artista-individual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=expos-actuales.css.map */
