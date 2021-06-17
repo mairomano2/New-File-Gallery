@@ -22,6 +22,10 @@ body {
   min-height: 100vh;
 }
 
+img {
+  width: 600px;
+}
+
 /* tamaño grande */
 i {
   margin: 0px 0px 0px 15px;
@@ -29,7 +33,7 @@ i {
 
 .estilo-desktop {
   font-family: 'Roboto Mono', monospace;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 200;
   background-color: black;
   padding: 10px;
@@ -92,7 +96,7 @@ i {
 .dropdown {
   color: white;
   font-family: 'Roboto Mono', monospace;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 200;
   background-color: black;
   -webkit-box-pack: justify;
@@ -108,7 +112,7 @@ i {
 .dropdown .dropdown-menu .dropdown-item {
   color: white;
   font-family: 'Roboto Mono', monospace;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 200;
 }
 
@@ -131,14 +135,14 @@ i {
 
 h2 {
   font-family: 'Major Mono Display', monospace;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: lighter;
 }
 
 @media (max-width: 768px) {
   h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 5rem;
   }
 }
 
@@ -156,13 +160,13 @@ h2 {
 
 @media (max-width: 576px) {
   .fondo-section {
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
   }
 }
 
 .estilo-h3 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
+  font-size: 3rem;
   margin-bottom: 10px;
   margin-top: 7px;
   font-weight: 300;
@@ -171,18 +175,18 @@ h2 {
 .letras-p {
   color: black;
   font-family: 'Roboto Mono', monospace;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
-.letras-p a {
+a:hover {
   color: black;
 }
 
 /* FOOTER */
 .footer {
   font-family: 'Roboto Mono', monospace;
-  font-size: 13px;
+  font-size: 1.3rem;
   background-color: black;
   color: white;
   padding: 10px;
@@ -194,7 +198,11 @@ footer p {
 }
 
 footer a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: white;
+}
+
+footer a:hover {
   color: white;
 }
 

@@ -1,6 +1,6 @@
 .contenedor-padre{
-    margin: 2rem;
-    padding: 2rem;
+    margin: 20px;
+    padding: 20px;
     display: flex;
 
         .contenedor-hijo{
@@ -19,12 +19,16 @@
         }
 }
 
+img{
+    width: 600px;
+}
+
 @media (max-width: 768px){
     .contenedor-padre{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0rem;
+        margin: 0px;
         }
 }
 
