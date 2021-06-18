@@ -1,0 +1,32 @@
+/* tamaño grande */
+
+.estilo-desktop{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    font-weight: 200;
+    background-color: black;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estilo-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    align-items: center;
+    list-style: none;
+}
+
+.estilo-li{
+    margin: 0px 15px 0px 15px;
+}
+
+.decoracion-header{
+    text-decoration: none;
+    color: white;
+}

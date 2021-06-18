@@ -1,0 +1,53 @@
+/* tamaño chico */
+
+svg{
+    margin: 0px 0px 0px 15px;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+@media (min-width: 768px){
+    svg{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.boton-dropdown{
+    background-color: black;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-items: right;
+
+    .fondo-menu{
+        background-color: black;
+
+        .menu-item{
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 20px;
+            font-weight: 200;
+            margin: 10px;
+        }
+    }
+}
+
+.menu{
+    font-size: 15px;
+}
+
+
+@media(max-width: 767px){
+    .nav-desktop{
+        display: none;
+    }
+}
+
+@media(min-width:767px){
+    .boton-dropdown{
+        display: none;
+    }
+}

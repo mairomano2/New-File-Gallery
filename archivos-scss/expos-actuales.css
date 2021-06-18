@@ -22,65 +22,6 @@ body {
   min-height: 100vh;
 }
 
-/* tamaño chico */
-svg {
-  margin: 0px 0px 0px 15px;
-  width: 30px;
-  height: 30px;
-  color: white;
-}
-
-@media (min-width: 768px) {
-  svg {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-.boton-dropdown {
-  background-color: black;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.boton-dropdown .fondo-menu {
-  background-color: black;
-}
-
-.boton-dropdown .fondo-menu .menu-item {
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  font-weight: 200;
-  margin: 10px;
-}
-
-.menu {
-  font-size: 15px;
-}
-
-@media (max-width: 768px) {
-  .boton-dropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .nav-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 767px) {
-  .boton-dropdown {
-    display: none;
-  }
-}
-
 /* tamaño grande */
 .estilo-desktop {
   font-family: 'Roboto Mono', monospace;
@@ -130,6 +71,64 @@ svg {
   color: white;
 }
 
+/* tamaño chico */
+svg {
+  margin: 0px 0px 0px 15px;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.boton-dropdown {
+  background-color: black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: right;
+}
+
+.boton-dropdown .fondo-menu {
+  background-color: black;
+}
+
+.boton-dropdown .fondo-menu .menu-item {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 10px;
+}
+
+.menu {
+  font-size: 15px;
+}
+
+@media (max-width: 767px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .boton-dropdown {
+    display: none;
+  }
+}
+
 h2 {
   font-family: 'Major Mono Display', monospace;
   font-size: 60px;
@@ -139,7 +138,7 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: auto;
   }
 }
 
