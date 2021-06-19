@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -22,115 +21,67 @@ body {
   min-height: 100vh;
 }
 
-img {
-  width: 600px;
-}
-
-/* tamaño grande */
-i {
-  margin: 0px 0px 0px 15px;
-}
-
-.estilo-desktop {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.7rem;
-  font-weight: 200;
-  background-color: black;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.estilo-desktop .estilo-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0px;
-}
-
-.estilo-desktop .estilo-ul .estilo-li {
-  margin: 0px 15px 0px 15px;
-  list-style: none;
+svg {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
   color: white;
 }
 
-.estilo-desktop .estilo-ul .decoracion-header {
+.display-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: space-around;
+}
+
+.fondo-nav {
+  background-color: black;
+  padding: 0px;
+}
+
+.coso {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: white;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.items {
+  color: white;
+  font-weight: lighter;
   text-decoration: none;
-  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
 }
 
-.estilo-desktop .estilo-ul .hover-nosotros:hover {
+.item-nosotros:hover {
   color: #39e174;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.estilo-desktop .estilo-ul .hover-expos-anteriores:hover {
-  color: #39a4ac;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.item-open-call:hover {
+  color: #3c74d7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.estilo-desktop .estilo-ul .hover-open-call:hover {
+.item-exposiciones:hover {
   color: #833ed9;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/* tamaño chico */
-.dropdown {
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.2rem;
-  font-weight: 200;
-  background-color: black;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px 20px 10px 20px;
-}
-
-.dropdown .dropdown-menu {
-  background-color: black;
-}
-
-.dropdown .dropdown-menu .dropdown-item {
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.2rem;
-  font-weight: 200;
-}
-
-@media (max-width: 767px) {
-  .dropdown {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .nav-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .dropdown {
-    display: none;
-  }
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /* FOOTER */
@@ -141,6 +92,14 @@ i {
   color: white;
   padding: 10px;
   font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .footer {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
 }
 
 footer p {
@@ -166,8 +125,8 @@ footer a:hover {
 h1 {
   font-family: 'Major Mono Display', monospace;
   color: black;
-  font-weight: normal;
-  font-size: 80px;
+  font-weight: 300;
+  font-size: 7rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.219);
   padding: 15px;
@@ -175,19 +134,28 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  h1 h1 {
-    font-size: 50px;
+  h1 {
+    font-size: 5rem;
   }
 }
 
 @media (max-width: 320px) {
-  h1 h1 {
-    font-size: 40px;
+  h1 {
+    font-size: 4rem;
   }
 }
 
 h2 {
+  font-size: 2rem;
   font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  h2 {
+    font-size: 1.7rem;
+    font-size: bolder;
+  }
 }
 
 .letras-box {
@@ -237,6 +205,8 @@ main a {
 /* transformaciones en el main */
 .hover:hover {
   background-color: rgba(255, 255, 255, 0.521);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 main a:hover {

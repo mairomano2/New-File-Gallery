@@ -7,6 +7,14 @@
     color: white;
     padding: 10px;
     font-weight: 300;
+    text-align: center;
+}
+
+@media (max-width: 425px){
+    .footer{
+        font-size: 1.3rem;
+        padding: 10px;
+    }
 }
 
 footer p{

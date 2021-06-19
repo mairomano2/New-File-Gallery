@@ -3,15 +3,22 @@
 @import "resets";
 @import "letras";
 
-.h3-nosotros{
-    @extend.estilo-h3;
-    text-align: left;
+@media (max-width:768px){
+    .fondoh2{
+        font-size: 4rem;
+    }
 }
 
-.letras-p{
-    @extend.text-align-left;
+@media (max-width:425px){
+    .fondo-section{
+        margin: 15px;
+        padding: 15px;
+    }
 }
 
 a{
     color: black;
 }
+
+
+

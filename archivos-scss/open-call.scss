@@ -1,8 +1,7 @@
 @import "resets";
 @import "header";
-@import "letras";
 @import "footer";
-
+@import "letras";
 
 .contenedor{
     margin: 15px 60px 15px 60px;
@@ -27,6 +26,12 @@
     margin: 10px;
 }
 
+.letras-p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
 @media (max-width: 768px){
     .contenedor-hijo{
         width: 100%;
@@ -45,4 +50,8 @@ img{
         width: 200px ;
         height: 200px;
     }
+}
+
+main a{
+    color: black;
 }

@@ -4,6 +4,23 @@
 @import "letras";
 @import "footer";
 
+main{
+    padding: 0px;
+}
+
 img{
     width: 600px;
+}
+
+@media (max-width: 425px){
+    .letras-p{
+        font-size: 1.3rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 425px){
+    .estilo-h3{
+        font-size: 2.3rem;
+    }
 }

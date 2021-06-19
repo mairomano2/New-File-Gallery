@@ -11,16 +11,7 @@
             justify-content: center;
             padding: 10px;
             margin: 5px 0px 5px 0px;
-        
-                iframe{
-                    margin: 5px 0px 5px 0px;
-                    border-radius: 7px;
-                }
         }
-}
-
-img{
-    width: 600px;
 }
 
 @media (max-width: 768px){
@@ -29,13 +20,28 @@ img{
         flex-direction: column;
         align-items: center;
         margin: 0px;
-        }
+    }
+}
+
+@media(max-width:425px){
+    .contenedor-padre{
+        margin: 10px;
+        padding: 0px;
+    }
+}
+
+iframe{
+    margin: 5px 0px 5px 0px;
+    border-radius: 7px;
+    width: auto;
 }
 
 @media (max-width: 768px){
-    .iframes{
+    iframe{
+        width: 270px;
         display: flex;
         flex-direction: column;
         justify-items: center;
     }
 }
+
