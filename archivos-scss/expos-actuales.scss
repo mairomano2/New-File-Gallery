@@ -1,0 +1,27 @@
+@import "resets";
+@import "header";
+@import "grilla-artistas";
+@import "letras";
+@import "footer";
+
+
+.iframes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe{
+    width: 400px;
+    height: 250px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 7px;     
+}
+
+@media (max-width: 768px){
+    .iframes{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+}

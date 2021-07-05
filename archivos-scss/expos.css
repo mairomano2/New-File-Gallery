@@ -21,44 +21,31 @@ body {
   min-height: 100vh;
 }
 
-svg {
+.fondo-nav {
+  background-color: black;
+  padding: 0px;
+}
+
+.fondo-nav svg {
   margin: 5px;
   width: 30px;
   height: 30px;
   color: white;
 }
 
-.display-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  justify-items: space-around;
+.fondo-nav .ham {
+  color: white;
 }
 
-.fondo-nav {
-  background-color: black;
-  padding: 0px;
-}
-
-.coso {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
-.custom-toggler.navbar-toggler {
+.fondo-nav .custom-toggler.navbar-toggler {
   border-color: white;
 }
 
-.custom-toggler .navbar-toggler-icon {
+.fondo-nav .custom-toggler.navbar-toggler .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.items {
+.fondo-nav .items {
   color: white;
   font-weight: lighter;
   text-decoration: none;
@@ -90,26 +77,26 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contenedor-padre .contenedor-hijo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px;
-  margin: 5px 0px 5px 0px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -135,15 +122,15 @@ svg {
   }
 }
 
-iframe {
+.iframe-pdf {
+  width: 400px;
+  height: 500px;
   margin: 5px 0px 5px 0px;
   border-radius: 7px;
-  width: auto;
 }
 
 @media (max-width: 768px) {
-  iframe {
-    width: 270px;
+  .iframe-pdf {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -152,6 +139,47 @@ iframe {
         -ms-flex-direction: column;
             flex-direction: column;
     justify-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .iframe-pdf {
+    width: 268px;
+  }
+}
+
+.iframe-video {
+  width: 430px;
+  height: 320px;
+}
+
+@media (max-width: 425px) {
+  .iframe-video {
+    width: 268px;
+    height: 150px;
+  }
+}
+
+img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  width: 400px;
+}
+
+@media (max-width: 425px) {
+  img {
+    width: 260px;
+  }
+}
+
+.posicion-carousel {
+  margin-bottom: 70px;
+}
+
+@media (max-widt: 768px) {
+  .posicion-carousel {
+    margin-bottom: 15px;
   }
 }
 
@@ -189,7 +217,7 @@ iframe {
 
 @media (max-width: 576px) {
   .fondo-section {
-    margin: 5px;
+    margin: 10px 5px 10px 5px;
     padding: 10px;
   }
 }
@@ -250,10 +278,6 @@ footer a:hover {
 
 main {
   padding: 0px;
-}
-
-img {
-  width: 600px;
 }
 
 @media (max-width: 425px) {

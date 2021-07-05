@@ -2,15 +2,14 @@
     margin: 20px;
     padding: 20px;
     display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
 
         .contenedor-hijo{
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 10px;
-            margin: 5px 0px 5px 0px;
+            flex-direction: column;
+            align-items: center;
         }
 }
 
@@ -30,18 +29,58 @@
     }
 }
 
-iframe{
+.iframe-pdf{
+    width: 400px;
+    height: 500px;
     margin: 5px 0px 5px 0px;
     border-radius: 7px;
-    width: auto;
 }
 
 @media (max-width: 768px){
-    iframe{
-        width: 270px;
+    .iframe-pdf{
         display: flex;
         flex-direction: column;
         justify-items: center;
+    }
+}
+
+@media (max-width: 425px){
+    .iframe-pdf{
+        width: 268px;
+    }
+}
+
+.iframe-video{
+    width: 430px;
+    height: 320px;
+}
+
+@media (max-width: 425px){
+    .iframe-video{
+        width: 268px;
+        height: 150px;
+    }
+}
+
+img{
+    align-content: center;
+    margin: auto;
+    width: 400px;
+}
+
+@media (max-width:425px){
+    img{
+        width: 260px;
+    }
+}
+
+.posicion-carousel{
+    margin-bottom: 70px;
+}
+
+@media(max-widt:768px){
+    .posicion-carousel{
+        margin-bottom: 15px;
     }
 }
 

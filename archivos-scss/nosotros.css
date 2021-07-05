@@ -1,41 +1,28 @@
-svg {
+.fondo-nav {
+  background-color: black;
+  padding: 0px;
+}
+
+.fondo-nav svg {
   margin: 5px;
   width: 30px;
   height: 30px;
   color: white;
 }
 
-.display-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  justify-items: space-around;
+.fondo-nav .ham {
+  color: white;
 }
 
-.fondo-nav {
-  background-color: black;
-  padding: 0px;
-}
-
-.coso {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
-.custom-toggler.navbar-toggler {
+.fondo-nav .custom-toggler.navbar-toggler {
   border-color: white;
 }
 
-.custom-toggler .navbar-toggler-icon {
+.fondo-nav .custom-toggler.navbar-toggler .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.items {
+.fondo-nav .items {
   color: white;
   font-weight: lighter;
   text-decoration: none;
@@ -149,7 +136,7 @@ body {
 
 @media (max-width: 576px) {
   .fondo-section {
-    margin: 5px;
+    margin: 10px 5px 10px 5px;
     padding: 10px;
   }
 }
@@ -181,6 +168,11 @@ a:hover {
   .fondoh2 {
     font-size: 4rem;
   }
+}
+
+.fondo-section {
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 @media (max-width: 425px) {
