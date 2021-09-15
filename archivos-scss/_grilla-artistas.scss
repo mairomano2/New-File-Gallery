@@ -62,14 +62,14 @@
     }
 }
 
-img{
+.img{
     align-content: center;
     margin: auto;
     width: 400px;
 }
 
 @media (max-width:425px){
-    img{
+    .img{
         width: 260px;
     }
 }

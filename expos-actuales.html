@@ -27,7 +27,7 @@
 </head>
 <body class="display">
     <header> 
-        <nav class="navbar navbar-expand-lg fondo-nav">
+        <nav class="navbar navbar-expand-lg fondo-nav" id="navbar">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
@@ -52,7 +52,7 @@
                     <ul class="dropdown-menu fondo-nav" aria-labelledby="navbarDropdownMenuLink">
                       <li><a class="dropdown-item items" href="expos-actuales.html">Exposición actual</a></li>
                       <li><a class="dropdown-item items" href="artistas.html">Exposición permanente</a></li>
-                      <li><a class="dropdown-item items" href="expos-anteriores.html">Exposiciones anteriores</a></li>
+                      <li><a class="dropdown-item items" href="./expos-anteriores/expos-anteriores.html">Exposiciones anteriores</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -63,71 +63,91 @@
     
     <main>
       
-        <h2 class="fondoh2">Fama Y Guita Duo</h2>
+        <h2 class="fondoh2">18 de marzo</h2>
         <div class="contenedor-padre">
             <div class="contenedor-hijo">
                 <section class="iframes fondo-section">
                     <h3 class="estilo-h3"> Obras</h3>
-                    <iframe src="https://www.youtube.com/embed/IcHqZEgm7Gw" class="iframe-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/M32WjS_nd8g" class="iframe-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/0rw2mh6bqK8" class="iframe-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/OqJNi1CmGes" class="iframe-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/r3dRJ6w5d3Y" class="iframe-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="letras-p">Diseños de tatuajes <a href="#info-tatuajes">(Más información)</a></p>
+                  <div id="carousel2" class="carousel slide posicion-carousel" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 1"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./male-bianco/male1.jpg" class="d-block w-1 img" alt="Ilustración digital de varios roostros con pelo corto">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./male-bianco/male2.jpg" class="d-block w-1 img" alt="Autoretrato digital de le artista">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./male-bianco/male3.jpg" class="d-block w-1 img" alt="Ilustración digital de un brazo roto con la incripción 'crack' al lado">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./male-bianco/male4.png" class="d-block w-1 img" alt="Ilustración digital de dos personas abrazadas junto con la difinición de la palabra hogar">
+                    </div>
+
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div>
+                  <p class="letras-p">Un pegote <a href="#info-pegote">(Más información)</a></p>
+                  <img src="male-bianco/male5.jpg" class="img" alt="un pegote">
+                </div>
                 </section>
             </div>
             <div>
                 <section class="fondo-section">
-                    <h3 class="estilo-h3"> Sobre Fama y Guita</h3>
-                    <p class="letras-p">Fama y Guita es un dúo de poesía performatica que nace de los slams (competencias de poesia oral) y que utiliza recursos propios de la musica y el teatro para tratar con ironia y humor diferentes tematicas.</p>
-                </section>
-                <section class="fondo-section">
-                    <h3 class="estilo-h3">Integrantes</h3>
-                    <p class="letras-p">º Ricardo Ache Bozzini: bestia del ritmo, ex militante de la JP, inventor del
-                    genero “locura pop”, referente del under de los 80 y maestro espiritual nivel 15
+                    <h3 class="estilo-h3" id="info-tatuajes">Diseños de tatuajes</h3>
+                    <p class="letras-p">Empecé en 2019 a vender diseños de tatuajes para comprarme los materiales para empezar a tatuar y finalmente el próximo mes voy a estar tatuando todos estos diseños.</p>
                     <br>
-                    º Daniel Galdona: a veces mimo de plaza, a veces poetisa punkipop con doble
-                    vida, de dia trabaja cortando fierros en un taller, de noche lee poemas
-                    travestizurdos en antros culturales de la movida.</p>
                 </section>
                 <section class="fondo-section">
-                    <h3 class="estilo-h3">Trayectoria</h3>
-                    <p class="letras-p">El duo surge a fines de 2019 y hasta el inicio de la pandemia, nos presentamos
-                        en diversos lugares del under poetico: La Justa Poética, el Ciclo Mappa, el
-                        Slam Zona Norte de poesia oral, el Slam de San Fernando, entre otros.</p>
-                </section>
-                <section class="fondo-section">    
-                    <h3 class="estilo-h3">Miniserie web</h3>
-                    <p class="letras-p">Durante el aislamiento produjimos la miniserie “El Pibe Trifulca y El Milico
-                        Ricotero contra El Coloso Menemista”, guionada, filmada y actuada
-                        integramente por el dúo, con musica original de Javier Visñovezky.
-                        Los dos primeros capitulos estan subidos a youtube.
-                        La serie transcurre en un mundo futuro, azotado por zombies ruralista, virus
-                        mortiferos de transmision alimenticia y proyectos para revivir a Menem.
-                        Todo con una estetica trash de efectos especiales berretas, tiroteos, exceso de
-                        cromas, frases de los redondos y mucha accion.</p>
-                </section>
-                <section class="fondo-section">
-                    <h3 class="estilo-h3">Poesía y bardo</h3>
-                    <p class="letras-p">
-                    En enero del 2021 presentamos el show “Poesía y Bardo” en el teatro “Sala
-                    Luis Berti” de La Cumbre, Cordoba.
-                    Tambien realizamos un par de presentaciones en el Teatro Popular “La otra
-                    cosa”, en C.A.B.A
-                    El espectaculo dura 1hs y pasa del tango a la cumbia, de los despidos a la
-                    relacion homoerotica limitada entre un cheto y un uruguayo, de los chistes
-                    sobre la merca a los latigazos de una oficinista con corset a un Hannibal Lecter
-                    hambriento.
-                    El show es ágil, rítmico, visual y esta basado en sketches cortos y efectivos
-                    Hay canciones, lecturas y sorpresivos cambios de vestuario.
+                  <h3 class="estilo-h3" id="info-pegote">Un pegote</h3>
+                    <p class="letras-p">Esta hecho con acuarelas, es uno de mis trabajos más saturados a nivel color,me gusta jugar con los colores y esa sensación viscosa como de caramelos derretidos.
+                                        <br> <br>
+                                        Creo que se puede notar esa sensación engorrosa asfixiante de estar completamente pegado y atrapado,sin saber cómo llegaste hasta ese punto. 
                     </p>
                 </section>
+                <section class="fondo-section">
+                    <h3 class="estilo-h3">Sobre el artista</h3>
+                    <p class="letras-p">Soy un artista trans de 22 años en Buenos Aires, argentina. Me forme en la escuela de bellas artes Rogelio yurtia. Realice diversos cursos de dibujo y pintura en el UNA, aunque mí búsqueda es más auto dicacta y experimental.
+                    <br>
+                      Desde 2016 me dedique a vender y exponer mis obras en distintos lugares: 
+                    <br>
+                    -2018/2019 exposición mensual en el centro cultural feliza, en el ciclo "lo personal es político.
+                    <br>
+                    -2019 en el panda rojo
+                    <br>
+                    -2019 casa azul espació cultural.
+                    <br>
+                    -2016/2017 Rogelio yurtia exposición en la noche de los museos.
+                    </p>
+                </section>
+                
                 <section class="fondo-section">
                     <h3 class="estilo-h3">Contacto</h3>
                     <p class="letras-p">
-                        <a href="https://www.instagram.com/famayguitaduo/" target="_blank">Instagram</a>
-                    </p>
-                    <p class="letras-p">
-                        <a href="https://www.youtube.com/user/locurapop" target="_blank">YouTube</a>
+                        <a href="https://www.instagram.com/male.bianco5/" target="_blank">Instagram</a>
+                        <br>
+                        <a href="https://cafecito.app/MaleBianco" target="_blank">Cafecito App</a>
                     </p>
             </div>
         </div>

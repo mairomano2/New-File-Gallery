@@ -10,30 +10,24 @@
     border-radius: 7px;
 
     .contenedor-hijo{
+        display: block;
         font-family: 'Roboto Mono', monospace;
         font-size: 17px;
         padding: 10px;
         border-radius: 7px;
 
-        .artista-individual{
-            display: flex;
-            flex-flow: column;
-
-            img{
-                width: 200px;
-                height: 200px;
-                margin: auto;
-                box-shadow: -5px 6px 5px rgba(34, 34, 34, 0.466);
-                -moz-border-radius:190px;
-                -webkit-border-radius:190px;
-                
-            }
+        img{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            box-shadow: -5px 6px 5px rgba(34, 34, 34, 0.466);
+            -moz-border-radius:190px;
+            -webkit-border-radius:190px;
         }
     }
 }
 
-main a{
-    padding: 10px;
+.display-anchor{
     text-decoration: none;
     color: black;
     text-align: center;
@@ -67,7 +61,6 @@ main a{
     background-color: rgba(255, 255, 255, 0.219);
     border: 1px rgba(255, 255, 255, 0.425) solid;
     transition: 0.5s;
-
 }
 
 

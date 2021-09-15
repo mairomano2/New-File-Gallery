@@ -1,0 +1,33 @@
+@import "resets";
+@import "letras";
+@import "header";
+@import "footer";
+
+.contenedor-padre{
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.219);
+  border-radius: 7px;
+  
+  .contenedor-hijo{
+    padding: 10px;
+    margin: 0px 100px;
+  }
+  
+@media (max-width: 768px){
+  .contenedor-hijo{
+    margin: 0px;
+  }
+}
+}
+
+.contenedor-hijo:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+    border: 1px rgba(255, 255, 255, 0.425) solid;
+    transition: 0.5s;
+    border-radius: 7px;
+}
+
+.estilo-h3{
+  text-align: center;
+}
