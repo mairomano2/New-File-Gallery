@@ -172,6 +172,41 @@ footer a:hover {
   border-radius: 7px;
 }
 
+.contenedor-padre .funcionalidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor-padre .funcionalidades .fondo-menu {
+  background-color: rgba(255, 255, 255, 0.219);
+  border: 1px rgba(255, 255, 255, 0.219) solid;
+  border-radius: 7px;
+}
+
+.contenedor-padre .funcionalidades .fondo-menu .menu-item {
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size: 17px;
+}
+
+.contenedor-padre .funcionalidades .boton {
+  background-color: rgba(255, 255, 255, 0.219);
+  border: 1px rgba(255, 255, 255, 0.219) solid;
+  border-radius: 7px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size: 17px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
 .contenedor-padre .contenedor-hijo {
   display: block;
   font-family: 'Roboto Mono', monospace;
@@ -191,6 +226,8 @@ footer a:hover {
 }
 
 .display-anchor {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   color: black;
   text-align: center;
@@ -221,7 +258,7 @@ footer a:hover {
 
 .contenedor-hijo:hover {
   background-color: rgba(255, 255, 255, 0.219);
-  border: 1px rgba(255, 255, 255, 0.425) solid;
+  border: 1px rgba(255, 255, 255, 0.219) solid;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

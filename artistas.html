@@ -1,262 +1,277 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>    
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="desciption" content="Conocé a todos los artistas que forman parte de New File Gallery">
-        <meta name="keywords" content="galería de arte, arte, galería, artistas, artes visuales, musica, poesía, fotografía, collage, video, arte digital">
-        <title>New File - Exposiciones permanentes</title>
+  <head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Conocé a todos los artistas que forman parte de New File Gallery">
+    <meta name="keywords" content="galería de arte, arte, galería, artistas, artes visuales, musica, poesía, fotografía, collage, video, arte digital">
+    <title>New File - Exposiciones permanentes</title>
 
-        <!-- BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-        <!-- FUENTE H2 -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-        
-        <!-- FUENTE HEADER Y MAIN -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="./archivos-scss/artistas.css">
-    </head>
-    <body class="display">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-        <header> 
-          <div class="position">
-            <nav class="navbar navbar-expand-lg fondo-nav">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
-                    </svg>
-                  </a>
-                  <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon custom-toggler"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link items item-nosotros" href="nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link items item-open-call" href="open-call.html">Open call</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link items item-exposiciones dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Exposiciones
-                        </a>
-                        <ul class="dropdown-menu fondo-nav" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item items" href="expos-actuales.html">Exposición actual</a></li>
-                          <li><a class="dropdown-item items" href="artistas.html">Exposición permanente</a></li>
-                      <li><a class="dropdown-item items" href="./expos-anteriores/expos-anteriores.html">Exposiciones anteriores</a></li>
-                        </ul>
-                      </li>
+    <!-- FUENTE H2 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    
+    <!-- FUENTE HEADER Y MAIN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./archivos-scss/artistas.css">
+  </head>
+  <body class="display">
+
+    <header> 
+      <div class="position">
+        <nav class="navbar navbar-expand-lg fondo-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                </svg>
+              </a>
+              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon custom-toggler"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link items item-nosotros" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link items item-open-call" href="open-call.html">Open call</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link items item-exposiciones dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Exposiciones
+                    </a>
+                    <ul class="dropdown-menu fondo-nav" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item items" href="expos-actuales.html">Exposición actual</a></li>
+                      <li><a class="dropdown-item items" href="artistas.html">Exposición permanente</a></li>
+                  <li><a class="dropdown-item items" href="./expos-anteriores/expos-anteriores.html">Exposiciones anteriores</a></li>
                     </ul>
-                  </div>
-                </div>
-              </nav>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </header>
-        
-        <main class="container-fluid">
-            <h2 class="fondoh2">Exposiciones Permanentes</h2>
-            <div class="contenedor-padre row justify-content-space-around">
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6" > 
-                  <a href="./artistas/eva-ferran/eva-ferran.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <h5><span class="badge bg-primary">Nuevo!</span></h5>
-                      <img src="artistas/eva-ferran/foto.png" alt="foto del artista">
-                      <p>Eva Ferran</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/kahlil-mendoza/kahlil-mendoza.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <h5><span class="badge bg-primary">Nuevo!</span></h5>
-                      <img src="artistas/kahlil-mendoza/foto.png" alt="foto del artista">
-                      <p>Kahlil Mendoza</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/vanessa-rojas/vanessa-rojas.html" class="display-anchor">
-                    <div class="artista-individual">
-                      <h5><span class="badge bg-primary">Nuevo!</span></h5>
-                      <img src="artistas/vanessa-rojas/foto.png" alt="foto del artista">
-                      <p>Vanessa Rojas</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/ariel-fernando-moro/ariel-fernando-moro.html" class="display-anchor">
-                    <div class="artista-individual">
-                      <h5><span class="badge bg-primary">Nuevo!</span></h5>
-                      <img src="artistas/ariel-fernando-moro/foto.png" alt="foto del artista">
-                      <p>Ariel Fernando Moro</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/belu-abdala/belu-abdala.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/belu-abdala/foto.png" alt="foto del artista">
-                      <p>Belu Abdala</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/pablo-delbene/pablo-delmene.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/pablo-delbene/foto.png" alt="foto del artista">
-                      <p>Pablo Delbene</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/anahi-juarez/anahi-juarez.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/anahi-juarez/foto.png" alt="foto del artista">
-                      <p>Anahi Juarez</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/tati-alvarez/tati-alvarez.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/tati-alvarez/foto.png" alt="foto del artista">
-                      <p>Tati Alvarez</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/pablo-funes/pablo-funes.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/pablo-funes/foto.png" alt="foto del artista">
-                      <p>Pablo Funes</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/rosario-amendolara/rosario.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="./Artistas/rosario-amendolara/foto.png" alt="foto del artista">
-                      <p>Rosario Amendolara</p>
-                    </div>
-                 </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/cata-gonzalez-rossi/cata-gonzales-rossi.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="./artistas/cata-gonzalez-rossi/foto.png" alt="foto del artista">
-                      <p>Cata Gonzales Rossi</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/giuli-duarte/giuli-duarte.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="./artistas/giuli-duarte/foto-artista.png" alt="foto del artista">
-                      <p>Giuli Duarte</p> 
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/federico-andrade/federico-andrade.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="./artistas/federico-andrade/P1180111.png" alt="foto del artista">
-                      <p>Federico Andrade</p> 
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/melo/melo.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/melo/icon2.png" alt="foto del artista">
-                      <p>Melo</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/andres-aymara/andres-amaya.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/andres-aymara/autoretrato.png" alt="foto del artista">
-                      <p>Andrés Amaya</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/brayan-viera/brayan-viera.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/brayan-viera/retrato.png" alt="foto del artista">
-                      <p>Brayan Viera</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/fernanda-gonzalez/fernanda-gonzalez.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/fernanda-gonzalez/retrato.png" alt="foto del artista">
-                      <p>Fernanda Gonzalez</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/pablo-benitez/pablo-benitez.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/pablo-benitez/FB_IMG_1622664326917_2.png" alt="foto del artista">
-                      <p>Pablo Benitez</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/yasna-orellana/yasna-orellana.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/yasna-orellana/yo.png" alt="foto del artista">
-                      <p>Yasna Orellana</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/daniel-olcay/daniel-olcay.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/daniel-olcay/209009886_1176358172789046_7148551493043510076_n.png" alt="foto del artista">
-                      <p>Daniel Olcay</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/florencia-pena/florencia-pena.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/florencia-pena/foto.png" alt="foto del artista">
-                      <p>Florencia Pena</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/angel-albisu/angel-albisu.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/angel-albisu/IMG_20210627_185139.png" alt="foto del artista">
-                      <p>Angel Albisu</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
-                  <a href="./artistas/irina-zaidz/irina-zaidz.html" class="display-anchor">  
-                    <div class="artista-individual">
-                      <img src="artistas/irina-zaidz/foto.png" alt="foto del artista">
-                      <p>Irina Zaidz</p>
-                    </div>
-                  </a>
-                </div>
+          </nav>
+        </div>
+    </header>
+    
+    <main class="container-fluid">
+        <h2 class="fondoh2">Exposiciones Permanentes</h2>
+        <div class="contenedor-padre row justify-content-space-around">
+          <div class="funcionalidades">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle boton" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Filtrar por</button>
+              <ul class="dropdown-menu fondo-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item menu-item" href="#">Pintura</a></li>
+                <li><a class="dropdown-item menu-item" href="#">Fotografia</a></li>
+                <li><a class="dropdown-item menu-item" href="#">Musica</a></li>
+              </ul>
             </div>
-        </main>
-        <footer class="footer">
-          <p>Seguinos en Instragram <a href="https://www.instagram.com/new_file_gallery_/">@new_file_gallery_</a></p>
-      </footer>
-    </body>
+            <button id="recomendacion" class="boton">Ver unx artista aleatorio</button>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6" > 
+            <a href="./artistas/eva-ferran/eva-ferran.html" class="display-anchor">  
+              <div class="artista-individual">
+                <h5><span class="badge bg-primary">Nuevo!</span></h5>
+                <img src="artistas/eva-ferran/foto.png" alt="foto del artista">
+                <p>Eva Ferran</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/kahlil-mendoza/kahlil-mendoza.html" class="display-anchor">  
+              <div class="artista-individual">
+                <h5><span class="badge bg-primary">Nuevo!</span></h5>
+                <img src="artistas/kahlil-mendoza/foto.png" alt="foto del artista">
+                <p>Kahlil Mendoza</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/vanessa-rojas/vanessa-rojas.html" class="display-anchor">
+              <div class="artista-individual">
+                <h5><span class="badge bg-primary">Nuevo!</span></h5>
+                <img src="artistas/vanessa-rojas/foto.png" alt="foto del artista">
+                <p>Vanessa Rojas</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/ariel-fernando-moro/ariel-fernando-moro.html" class="display-anchor">
+              <div class="artista-individual">
+                <h5><span class="badge bg-primary">Nuevo!</span></h5>
+                <img src="artistas/ariel-fernando-moro/foto.png" alt="foto del artista">
+                <p>Ariel Fernando Moro</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/belu-abdala/belu-abdala.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/belu-abdala/foto.png" alt="foto del artista">
+                <p>Belu Abdala</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/pablo-delbene/pablo-delmene.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/pablo-delbene/foto.png" alt="foto del artista">
+                <p>Pablo Delbene</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/anahi-juarez/anahi-juarez.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/anahi-juarez/foto.png" alt="foto del artista">
+                <p>Anahi Juarez</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/tati-alvarez/tati-alvarez.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/tati-alvarez/foto.png" alt="foto del artista">
+                <p>Tati Alvarez</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/pablo-funes/pablo-funes.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/pablo-funes/foto.png" alt="foto del artista">
+                <p>Pablo Funes</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/rosario-amendolara/rosario.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="./Artistas/rosario-amendolara/foto.png" alt="foto del artista">
+                <p>Rosario Amendolara</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/cata-gonzalez-rossi/cata-gonzales-rossi.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="./artistas/cata-gonzalez-rossi/foto.png" alt="foto del artista">
+                <p>Cata Gonzales Rossi</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/giuli-duarte/giuli-duarte.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="./artistas/giuli-duarte/foto-artista.png" alt="foto del artista">
+                <p>Giuli Duarte</p> 
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/federico-andrade/federico-andrade.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="./artistas/federico-andrade/P1180111.png" alt="foto del artista">
+                <p>Federico Andrade</p> 
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/melo/melo.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/melo/icon2.png" alt="foto del artista">
+                <p>Melo</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/andres-aymara/andres-amaya.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/andres-aymara/autoretrato.png" alt="foto del artista">
+                <p>Andrés Amaya</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/brayan-viera/brayan-viera.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/brayan-viera/retrato.png" alt="foto del artista">
+                <p>Brayan Viera</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/fernanda-gonzalez/fernanda-gonzalez.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/fernanda-gonzalez/retrato.png" alt="foto del artista">
+                <p>Fernanda Gonzalez</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/pablo-benitez/pablo-benitez.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/pablo-benitez/FB_IMG_1622664326917_2.png" alt="foto del artista">
+                <p>Pablo Benitez</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/yasna-orellana/yasna-orellana.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/yasna-orellana/yo.png" alt="foto del artista">
+                <p>Yasna Orellana</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/daniel-olcay/daniel-olcay.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/daniel-olcay/209009886_1176358172789046_7148551493043510076_n.png" alt="foto del artista">
+                <p>Daniel Olcay</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/florencia-pena/florencia-pena.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/florencia-pena/foto.png" alt="foto del artista">
+                <p>Florencia Pena</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/angel-albisu/angel-albisu.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/angel-albisu/IMG_20210627_185139.png" alt="foto del artista">
+                <p>Angel Albisu</p>
+              </div>
+            </a>
+          </div>
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+            <a href="./artistas/irina-zaidz/irina-zaidz.html" class="display-anchor">  
+              <div class="artista-individual">
+                <img src="artistas/irina-zaidz/foto.png" alt="foto del artista">
+                <p>Irina Zaidz</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <p>Seguinos en Instragram <a href="https://www.instagram.com/new_file_gallery_/">@new_file_gallery_</a></p>
+    </footer>
+    <script src="javascript/mian.js"></script>
+  </body>
 </html>
