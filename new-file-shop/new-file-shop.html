@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New File Shop</title>
+
+    <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- FUENTE H1 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  
+  <!-- FUENTE HEADER Y MAIN -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="../archivos-scss/shop.css">
+</head>
+<body class="display">
+    <header> 
+      <nav class="navbar navbar-expand-lg fondo-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+            </svg>
+          </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon custom-toggler"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link items item-open-call" href="new-file-shop.html">New File Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link items item-nosotros" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link items item-open-call" href="open-call.html">Open call</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link items item-exposiciones dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exposiciones</a>
+                <ul class="dropdown-menu fondo-nav" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item items" href="expos-actuales.html">Exposición actual</a></li>
+                  <li><a class="dropdown-item items" href="artistas.html">Exposición permanente</a></li>
+                  <li><a class="dropdown-item items" href="./expos-anteriores/expos-anteriores.html">Exposiciones anteriores</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  <main>
+    <h2 class="fondoh2">New File Shop</h2>
+    <div class="contenedor-padre">
+      <section class="fondo-section contenedor-hijo" >
+        <div class="info">
+          <h3 class="estilo-h3">Melo</h3>
+          <p class="letras-p"><a href="https://melomelo.flashcookie.com/" target="_blank">Ir a su tienda online</a></p>
+        </div>
+      </section>
+
+      <section class="fondo-section contenedor-hijo" >
+        <div class="info">
+          <h3 class="estilo-h3">Pablo Benitez</h3>
+          <p class="letras-p">Precio: $450 (pesos argentinos)</p>
+          <p class="letras-p">Entregas solamente presenciales en Buenos Aires</p>
+          <p class="letras-p"><a href="https://www.instagram.com/kantro07/" target="_blank">Contactar</a></p>
+        </div>
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 0"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pablo-benitez/img1.jpg" class="img w-1 d-block">
+            </div>
+            <div class="carousel-item">
+              <img src="pablo-benitez/img2.jpg" class="img w-1 d-block">
+            </div>
+            <div class="carousel-item">
+              <img src="pablo-benitez/img3.jpg" class="img w-1 d-block">
+            </div>
+            <div class="carousel-item">
+              <img src="pablo-benitez/img4.jpg" class="img w-1 d-block">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="fondo-section contenedor-hijo">
+        <div class="info">
+          <h3 class="estilo-h3">Rosario Amendolara</h3>
+          <p class="letras-p"><a href="https://tienda-ramen.flashcookie.com/" target="_blank">Ir a su tienda online</a></p>
+          <p class="letras-p">Precios:<br>-Poster A4 (21 x 29 cm) papel ilustración. $600 ARS<br>-Postal (15 x 10,5 cm aproximadamente) papel ilustración. $300 ARS <br>-Señaladores (16 X 6 CM) papel ilustración. 1 x $150 ARS / 3 x $300 ARS </p>
+          <p class="letras-p">Punto en común depende la zona (Olivos - Florida, Buenos Aires) / envío del archivo a una gráfica cerca del cliente donde se imprime y se retira / envío por rappi (corre por parte del cliente) </p>
+          <p class="letras-p">Métodos de pago: <br>-Transferencia bancaria <br>- Mercado Pago <br>- Efectivo</p>
+          <p class="letras-p">Contacto: <a href="https://www.instagram.com/ramen.art/" target="_blank">Instagram</a> <br>Mail: ramen.art111@gmail.com</p>
+        </div>
+        <img src="rosario/clairo.jpg" class="img">
+      </section>
+
+      <section class="fondo-section contenedor-hijo">
+        <div class="info">
+          <h3 class="estilo-h3">Vanessa Rojas</h3>
+          <p class="letras-p">-Las piezas se venden juntas. El precio por ambas es de $3,250 pesos mexicanos. <br>- Solamente hay en existencia 6 series numeradas, las 6 disponibles para venta , se entregan enmarcadas, cada una incluye: <br> 1. Algo es todo porque está en todas partes. Fotografía digital, impresión sobre papel de algodón. Dimensiones: 30x20cm. De la serie: ontología indefinida. 2021 <br>2. La línea es porque puede ser forma. Fotografía digital, impresión sobre papel de algodón. Dimensiones: 30x20cm. De la serie: ontología indefinida. 2021 </p>
+          <p class="letras-p">Sobre las obras: <br>Fotografías que pertenecen a la Serie “Ontología indefinida” la cúal consta de dos fotografías digitales y un video performance, formada a partir de una línea origen, pintada en ambas manos, la cual puede devenir cualquier forma geométrica básica (círculo, triángulo y rectángulo). Las obras se convierten en ejercicios de reflexión ontológica, a partir del movimiento, la aparente contradicción y la explosión que en ellas se encuentra. Surgida bajo la necesidad de entender el cambio y buscar nuevas maneras de existir, este ejercicio filosófico-artístico, invita a pensarnos como líneas-formas en un eterno devenir, en donde algo que es, puede ser también otra cosa, dejando de ser y al mismo tiempo siendo dependiendo qué fuerzas y circunstancias nos afecten.</p>
+          <p class="letras-p"><a href="https://www.instagram.com/bladeva_digital/" target="_blank">Contactar</a></p>
+        </div>
+        <img src="vanessa-rojas/img1.JPG" class="img">
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Seguinos en Instragram <a href="https://www.instagram.com/new_file_gallery_/">@new_file_gallery_</a></p>
+  </footer>
+</body>
+</html>

@@ -21,6 +21,19 @@ body {
   min-height: 100vh;
 }
 
+.img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  width: 400px;
+}
+
+@media (max-width: 425px) {
+  .img {
+    width: 260px;
+  }
+}
+
 .fondo-nav {
   background-color: black;
   padding: 0px;

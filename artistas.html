@@ -8,9 +8,6 @@
     <meta name="keywords" content="galería de arte, arte, galería, artistas, artes visuales, musica, poesía, fotografía, collage, video, arte digital">
     <title>New File - Exposiciones permanentes</title>
 
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
@@ -69,17 +66,17 @@
         <h2 class="fondoh2">Exposiciones Permanentes</h2>
         <div class="contenedor-padre row justify-content-space-around">
           <div class="funcionalidades">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle boton" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Filtrar por</button>
-              <ul class="dropdown-menu fondo-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item menu-item" href="#">Pintura</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Fotografia</a></li>
-                <li><a class="dropdown-item menu-item" href="#">Musica</a></li>
-              </ul>
-            </div>
             <button id="recomendacion" class="boton">Ver unx artista aleatorio</button>
+            <div class="boton categorias" id="todas">Todas las categorias</div>
+            <div class="boton categorias" id="pintura">Pintura</div>
+            <div class="boton categorias" id="fotografia">Fotografía</div>
+            <div class="boton categorias" id="musica">Música</div>
+            <div class="boton categorias" id="animacion">Animación</div>
+            <div class="boton categorias" id="literatura">Literatura</div>
+            <div class="boton categorias" id="comic">Cómic</div>
+            <div class="boton categorias" id="ilustracion">Ilustración digital</div>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6" > 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/eva-ferran/eva-ferran.html" class="display-anchor">  
               <div class="artista-individual">
                 <h5><span class="badge bg-primary">Nuevo!</span></h5>
@@ -88,7 +85,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/kahlil-mendoza/kahlil-mendoza.html" class="display-anchor">  
               <div class="artista-individual">
                 <h5><span class="badge bg-primary">Nuevo!</span></h5>
@@ -97,7 +94,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas fotografia"> 
             <a href="./artistas/vanessa-rojas/vanessa-rojas.html" class="display-anchor">
               <div class="artista-individual">
                 <h5><span class="badge bg-primary">Nuevo!</span></h5>
@@ -106,7 +103,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/ariel-fernando-moro/ariel-fernando-moro.html" class="display-anchor">
               <div class="artista-individual">
                 <h5><span class="badge bg-primary">Nuevo!</span></h5>
@@ -115,7 +112,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas musica"> 
             <a href="./artistas/belu-abdala/belu-abdala.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/belu-abdala/foto.png" alt="foto del artista">
@@ -123,7 +120,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas animacion"> 
             <a href="./artistas/pablo-delbene/pablo-delmene.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/pablo-delbene/foto.png" alt="foto del artista">
@@ -131,7 +128,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/anahi-juarez/anahi-juarez.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/anahi-juarez/foto.png" alt="foto del artista">
@@ -139,7 +136,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas literatura"> 
             <a href="./artistas/tati-alvarez/tati-alvarez.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/tati-alvarez/foto.png" alt="foto del artista">
@@ -147,7 +144,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas literatura musica"> 
             <a href="./artistas/pablo-funes/pablo-funes.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/pablo-funes/foto.png" alt="foto del artista">
@@ -155,7 +152,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas ilustracion"> 
             <a href="./artistas/rosario-amendolara/rosario.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="./Artistas/rosario-amendolara/foto.png" alt="foto del artista">
@@ -163,7 +160,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/cata-gonzalez-rossi/cata-gonzales-rossi.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="./artistas/cata-gonzalez-rossi/foto.png" alt="foto del artista">
@@ -171,7 +168,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas literatura fotografia"> 
             <a href="./artistas/giuli-duarte/giuli-duarte.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="./artistas/giuli-duarte/foto-artista.png" alt="foto del artista">
@@ -179,7 +176,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas fotografia"> 
             <a href="./artistas/federico-andrade/federico-andrade.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="./artistas/federico-andrade/P1180111.png" alt="foto del artista">
@@ -187,7 +184,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas ilustracion"> 
             <a href="./artistas/melo/melo.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/melo/icon2.png" alt="foto del artista">
@@ -195,7 +192,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas fotografia"> 
             <a href="./artistas/andres-aymara/andres-amaya.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/andres-aymara/autoretrato.png" alt="foto del artista">
@@ -203,7 +200,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas animacion ilustracion"> 
             <a href="./artistas/brayan-viera/brayan-viera.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/brayan-viera/retrato.png" alt="foto del artista">
@@ -211,7 +208,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas fotografia"> 
             <a href="./artistas/fernanda-gonzalez/fernanda-gonzalez.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/fernanda-gonzalez/retrato.png" alt="foto del artista">
@@ -219,7 +216,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/pablo-benitez/pablo-benitez.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/pablo-benitez/FB_IMG_1622664326917_2.png" alt="foto del artista">
@@ -227,7 +224,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/yasna-orellana/yasna-orellana.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/yasna-orellana/yo.png" alt="foto del artista">
@@ -235,7 +232,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/daniel-olcay/daniel-olcay.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/daniel-olcay/209009886_1176358172789046_7148551493043510076_n.png" alt="foto del artista">
@@ -243,7 +240,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/florencia-pena/florencia-pena.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/florencia-pena/foto.png" alt="foto del artista">
@@ -251,7 +248,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas comic"> 
             <a href="./artistas/angel-albisu/angel-albisu.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/angel-albisu/IMG_20210627_185139.png" alt="foto del artista">
@@ -259,7 +256,7 @@
               </div>
             </a>
           </div>
-          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6"> 
+          <div class="contenedor-hijo aling-items-center col-md-4 col-s-6 todas pintura"> 
             <a href="./artistas/irina-zaidz/irina-zaidz.html" class="display-anchor">  
               <div class="artista-individual">
                 <img src="artistas/irina-zaidz/foto.png" alt="foto del artista">

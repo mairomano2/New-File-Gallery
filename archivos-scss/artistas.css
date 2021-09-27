@@ -21,6 +21,19 @@ body {
   min-height: 100vh;
 }
 
+.img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  width: 400px;
+}
+
+@media (max-width: 425px) {
+  .img {
+    width: 260px;
+  }
+}
+
 .fondo-nav {
   background-color: black;
   padding: 0px;
@@ -172,41 +185,6 @@ footer a:hover {
   border-radius: 7px;
 }
 
-.contenedor-padre .funcionalidades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.contenedor-padre .funcionalidades .fondo-menu {
-  background-color: rgba(255, 255, 255, 0.219);
-  border: 1px rgba(255, 255, 255, 0.219) solid;
-  border-radius: 7px;
-}
-
-.contenedor-padre .funcionalidades .fondo-menu .menu-item {
-  font-family: 'Roboto Mono', monospace;
-  color: black;
-  font-size: 17px;
-}
-
-.contenedor-padre .funcionalidades .boton {
-  background-color: rgba(255, 255, 255, 0.219);
-  border: 1px rgba(255, 255, 255, 0.219) solid;
-  border-radius: 7px;
-  font-family: 'Roboto Mono', monospace;
-  color: black;
-  font-size: 17px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
 .contenedor-padre .contenedor-hijo {
   display: block;
   font-family: 'Roboto Mono', monospace;
@@ -223,6 +201,45 @@ footer a:hover {
           box-shadow: -5px 6px 5px rgba(34, 34, 34, 0.466);
   -moz-border-radius: 190px;
   -webkit-border-radius: 190px;
+}
+
+.funcionalidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.funcionalidades .fondo-menu {
+  background-color: #87e2b5;
+  border: 1px rgba(255, 255, 255, 0.219) solid;
+  border-radius: 7px;
+}
+
+.funcionalidades .fondo-menu .menu-item {
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size: 17px;
+  background-color: #87e2b5;
+  padding: 5px 20px;
+}
+
+.funcionalidades .boton {
+  background-color: rgba(255, 255, 255, 0.219);
+  border: 1px rgba(255, 255, 255, 0.219) solid;
+  border-radius: 7px;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size: 17px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .display-anchor {
