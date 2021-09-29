@@ -1,163 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="New File Gallery es una galería de arte digitalizado para artistas independientes"
-		/>
-		<meta
-			name="keywords"
-			content="galería de arte, arte, galería, artistas, artes visuales, musica, poesía, fotografía, collage, video, arte digital"
-		/>
-		<title>New File - Inicio</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="desciption" content="Toda la información de New File Gallery para conocernos mejor">
+  <meta name="keywords" content="galería de arte, arte, galería, artistas, artes visuales, musica, poesía, fotografía, collage, video, arte digital">
+  <title>New File Gallery - Inicio</title>
 
-		<!-- BOOTSTRAP -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-			crossorigin="anonymous"
-		></script>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-		/>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-		<!-- FUENTE DEL H1 -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap"
-			rel="stylesheet"
-		/>
-
-		<!-- FUENTE DEL HEADER, MAIN Y FOOTER -->
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
-			rel="stylesheet"
-		/>
-
-		<link rel="stylesheet" href="archivos-scss/index.css" />
-	</head>
-
-	<body class="display fondo kenburns-top">
-		<header>
-			<nav class="navbar navbar-expand-lg fondo-nav">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="index.html">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							fill="currentColor"
-							class="bi bi-house-door"
-							viewBox="0 0 16 16"
-						>
-							<path
-								d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
-							/>
-						</svg>
-					</a>
-					<button
-						class="navbar-toggler custom-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNavDropdown"
-						aria-controls="navbarNavDropdown"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon custom-toggler"></span>
-					</button>
-					<div class="collapse navbar-collapse separacion" id="navbarNavDropdown">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link items item-nosotros" href="nosotros.html">Nosotros</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link items item-open-call" href="open-call.html"
-									>Open call</a
-								>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link items item-exposiciones dropdown-toggle"
-									href="#"
-									id="navbarDropdownMenuLink"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Exposiciones
-								</a>
-								<ul
-									class="dropdown-menu fondo-nav"
-									aria-labelledby="navbarDropdownMenuLink"
-								>
-									<li>
-										<a class="dropdown-item items" href="expos-actuales.html"
-											>Exposición actual</a
-										>
-									</li>
-									<li>
-										<a class="dropdown-item items" href="artistas.html"
-											>Exposición permanente</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item items"
-											href="./expos-anteriores/expos-anteriores.html"
-											>Exposiciones anteriores</a
-										>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-
-		<main>
-			<div>
-				<h1>New File Galery</h1>
-			</div>
-			<div class="layout">
+  <!-- FUENTE H1 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  
+  <!-- FUENTE HEADER Y MAIN -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="./archivos-scss/index.css">
+</head>
+<body class="display fondo">
+      <header> 
+        <nav class="navbar navbar-expand-lg fondo-nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+              </svg>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon custom-toggler"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link items item-shop" href="new-file-shop/new-file-shop.html">New File Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link items item-nosotros" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link items item-open-call" href="open-call.html">Open call</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link items item-exposiciones dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Exposiciones
+                  </a>
+                  <ul class="dropdown-menu fondo-nav" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item items" href="expos-actuales.html">Exposición actual</a></li>
+                    <li><a class="dropdown-item items" href="artistas.html">Exposición permanente</a></li>
+                    <li><a class="dropdown-item items" href="./expos-anteriores/expos-anteriores.html">Exposiciones anteriores</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <div>
+        <h1 class="fondoh2">New File Gallery</h1>
+        <div class="layout">
 				<a href="expos-actuales.html">
-					<div class="letras-box estilo-box hover">
+					<div class="estilo-box hover fondo-section">
 						<h5><span class="badge bg-primary">Disponible hasta el 1/10</span></h5>
-						<h2 class="letras-h2">Exposicion actual</h2>
-						<p class="expo">Male Bianco</p>
+						<h2 class="letras-p">Exposicion actual</h2>
+						<p class="letras-p">Male Bianco</p>
 						<button type="button" class="btn btn-dark">Ir a la sala</button>
 					</div>
 				</a>
 				<a href="artistas.html">
-					<div class="letras-box estilo-box hover">
-						<h2 class="letras-h2">Exposiciones permanentes</h2>
-						<p class="expo">Conocé a lxs artistas</p>
+					<div class="estilo-box hover fondo-section">
+						<h2 class="letras-p">Exposiciones permanentes</h2>
+						<p class="letras-p">Conocé a lxs artistas</p>
 						<button type="button" class="btn btn-dark">Ir a la sala</button>
 					</div>
 				</a>
 			</div>
-		</main>
-
-		<footer class="footer">
-			<p>
-				Seguinos en Instragram
-				<a href="https://www.instagram.com/new_file_gallery_/">@new_file_gallery_</a>
-			</p>
+      </div>
+    </main>
+    <footer class="footer">
+			<p class="letras-p footer-p">Seguinos en Instragram <a href="https://www.instagram.com/new_file_gallery_/">@new_file_gallery_</a></p>
 		</footer>
-	</body>
+  </body>
 </html>

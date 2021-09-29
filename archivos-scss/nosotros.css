@@ -22,14 +22,20 @@
 .fondo-nav .items {
   background-color: black;
   color: white;
-  font-weight: lighter;
   text-decoration: none;
   font-family: 'Roboto Mono', monospace;
   font-size: 15px;
+  margin: 0px 10px;
+}
+
+.item-shop:hover {
+  color: #39e174;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .item-nosotros:hover {
-  color: #39e174;
+  color: #3aba99;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -185,8 +191,7 @@ a:hover {
 }
 
 .fondo-section {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 30px 80px;
 }
 
 @media (max-width: 425px) {
