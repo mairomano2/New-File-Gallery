@@ -1,9 +1,9 @@
 //MOSTRAR UN ARTISTA RANDOM
-const url = "https://new-file-gallery.000webhostapp.com/artistas/"
-const artistas = ["eva-ferran" , "kahlil-mendoza" , "irina-zaidz" , "angel-albisu" , "florencia-pena" , "daniel-olcay" , "yasna-orellana" , "pablo-benitez" , "fernanda-gonsalez" , "brayan-viera" , "andres amaya" , "federico-andrade" , "melo" , "giuli-duarte" , "cata-gonzales-rossi" , "rosario-amendolara" , "pablo-funes" , "tati-alvarez" , "anahi-juarez" , "pablo-delbene" , "belu-abdala" , "ariel-fernando-moro" , "vanessa-rojas" , "eva-ferran" , "kahlil-mendoza"];
+const url = "https://new-file-gallery.com.ar/artistas/"
+const artistas = ["eva-ferran" , "kahlil-mendoza" , "irina-zaidz" , "angel-albisu" , "florencia-pena" , "daniel-olcay" , "yasna-orellana" , "pablo-benitez" , "fernanda-gonzalez" , "brayan-viera" , "andres-amaya" , "federico-andrade" , "melo" , "giuli-duarte" , "cata-gonsalez-rossi" , "rosario-amendolara" , "pablo-funes" , "tati-alvarez" , "anahi-juarez" , "pablo-delbene" , "belu-abdala", "vanessa-rojas" , "ariel-fernando-moro"];
 const random = Math.floor(Math.random() * artistas.length);
 const recomendacion = artistas[random]; 
-let link = url + recomendacion+ "/" + recomendacion + ".html";
+let link = url + recomendacion + "/" + recomendacion + ".html";
 
 document.querySelector("#recomendacion").addEventListener("click", mostrarArtista);
 function mostrarArtista(){
@@ -21,7 +21,9 @@ for(let i = 0; i < categorias.length; i++){
 
 function filterPosts(item){
     changeActivePosition(item);
-    for(let i = 0; i < todas.length; i++){
+    for(let i = 0; i < categorias.length; i++){
+    categorias[i].addEventListener('click', filterPosts.bind(this, categorias[i]));
+}{
         if(todas[i].classList.contains(item.attributes.id.value)){
             todas[i].style.display = "block";
         } else {
