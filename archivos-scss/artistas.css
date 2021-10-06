@@ -209,35 +209,7 @@ footer a:hover {
   -webkit-border-radius: 190px;
 }
 
-.funcionalidades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.funcionalidades .fondo-menu {
-  background-color: #87e2b5;
-  border: 1px rgba(255, 255, 255, 0.219) solid;
-  border-radius: 7px;
-}
-
-.funcionalidades .fondo-menu .menu-item {
-  font-family: 'Roboto Mono', monospace;
-  color: black;
-  font-size: 17px;
-  background-color: #87e2b5;
-  padding: 5px 20px;
-}
-
-.funcionalidades .boton {
+.boton {
   background-color: rgba(255, 255, 255, 0.219);
   border: 1px rgba(255, 255, 255, 0.219) solid;
   border-radius: 7px;
@@ -246,6 +218,35 @@ footer a:hover {
   font-size: 17px;
   margin-bottom: 20px;
   padding: 10px;
+}
+
+.fondo-menu {
+  background-color: #87e2b5;
+  border: 1px rgba(255, 255, 255, 0.219) solid;
+  border-radius: 7px;
+}
+
+.fondo-menu .menu-item {
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size: 17px;
+  background-color: #87e2b5;
+  padding: 5px 20px;
+}
+
+.filtros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .display-anchor {
@@ -284,5 +285,9 @@ footer a:hover {
   border: 1px rgba(255, 255, 255, 0.219) solid;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.botones:hover {
+  background-color: rgba(255, 255, 255, 0.219);
 }
 /*# sourceMappingURL=artistas.css.map */

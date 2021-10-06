@@ -1,4 +1,4 @@
-//MOSTRAR UN ARTISTA RANDOM
+// //MOSTRAR UN ARTISTA RANDOM
 const url = "https://new-file-gallery.com.ar/artistas/"
 const artistas = ["eva-ferran" , "kahlil-mendoza" , "irina-zaidz" , "angel-albisu" , "florencia-pena" , "daniel-olcay" , "yasna-orellana" , "pablo-benitez" , "fernanda-gonzalez" , "brayan-viera" , "andres-amaya" , "federico-andrade" , "melo" , "giuli-duarte" , "cata-gonsalez-rossi" , "rosario-amendolara" , "pablo-funes" , "tati-alvarez" , "anahi-juarez" , "pablo-delbene" , "belu-abdala", "vanessa-rojas" , "ariel-fernando-moro"];
 const random = Math.floor(Math.random() * artistas.length);
@@ -7,34 +7,31 @@ let link = url + recomendacion + "/" + recomendacion + ".html";
 
 document.querySelector("#recomendacion").addEventListener("click", mostrarArtista);
 function mostrarArtista(){
-    window.location = link
-}
+  window.location = link
+};
 
 //FILTRO DE CATEGORIAS
-
 const categorias = document.querySelectorAll('.categorias');
 const todas = document.querySelectorAll('.todas');
 
 for(let i = 0; i < categorias.length; i++){
-    categorias[i].addEventListener('click', filterPosts.bind(this, categorias[i]));
+  categorias[i].addEventListener('click', filterPosts.bind(this, categorias[i]));
 }
 
 function filterPosts(item){
-    changeActivePosition(item);
-    for(let i = 0; i < categorias.length; i++){
-    categorias[i].addEventListener('click', filterPosts.bind(this, categorias[i]));
-}{
-        if(todas[i].classList.contains(item.attributes.id.value)){
-            todas[i].style.display = "block";
-        } else {
-            todas[i].style.display = "none";
-        }
-    }
-}
+  changeActivePosition(item);
+  for(let i = 0; i < todas.length; i++){
+    if(todas[i].classList.contains(item.attributes.id.value)){
+      todas[i].style.display = "block";
+    } else {
+      todas[i].style.display = "none";
+    };
+  };
+};
 
 function changeActivePosition(activeItem){
-    for(let i = 0; i < categorias.length; i++){
-        categorias[i].classList.remove('active');
-    }
-    activeItem.classList.add('active');
+  for(let i = 0; i < categorias.length; i++){
+    categorias[i].classList.remove('active');
+  };
+  activeItem.classList.add('active');
 };
