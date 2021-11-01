@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Obras del artista Federico Andrade">
+    <meta name="keywords" content="galería de arte, arte, galería, artistas, artes visuales, musica, poesía, fotografía, collage, video, arte digital, Fedeico Andrade">
+    <title>New File - Marianela Muñiz</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- FUENTE H1 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    
+    <!-- FUENTE HEADER Y MAIN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../archivos-scss/expos.css">
+  </head>
+
+  <body class="display">
+    <header> 
+      <nav class="navbar navbar-expand-lg fondo-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+            </svg>
+          </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon custom-toggler"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link items item-shop" href="../../new-file-shop/new-file-shop.html">New File Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link items item-nosotros" href="../../nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link items item-open-call" href="../../open-call.html">Open call</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link items item-exposiciones dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Exposiciones
+                </a>
+                <ul class="dropdown-menu fondo-nav" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item items" href="../../expos-actuales.html">Exposición actual</a></li>
+                  <li><a class="dropdown-item items" href="../../artistas.html">Exposición permanente</a></li>
+                  <li><a class="dropdown-item items" href="../../expos-anteriores/expos-anteriores.html">Exposiciones anteriores</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="fondoh2">Marianela Muñiz</h2>
+      <div class="contenedor-padre">
+          <div class="fondo-section contenedor-hijo">
+            <h3 class="estilo-h3">Obras</h3>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 0"></button>
+                </div>
+                <div class="carousel-inner carousel">
+                  <div class="carousel-item active">
+                    <img src="HABITACIÓN.jpg" class="d-block w-100 img" alt="Fotografía digital intervenida del autor">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="COCINA.jpg" class="d-block w-100 img" alt="Fotografía digital intervenida de un puente">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="COMEDOR.jpg" class="d-block w-100 img" alt="Fotografía digital intervenida de un puente">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="BALCÓN.jpg" class="d-block w-100 img" alt="Fotografía digital intervenida de un puente">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="BAÑO.jpg" class="d-block w-100 img" alt="Fotografía digital intervenida de un puente">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="LIVING.jpg" class="d-block w-100 img" alt="Fotografía digital intervenida de un puente">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        <div>
+          <section class="fondo-section">
+            <h3 class="estilo-h3">Sobre la artista</h3>
+            <p class="letras-p">Diseñadora de Imagen y Sonido (UBA) y fotógrafa.<br> <br>Hacia el año 2012 comienza a trabajar en televisión como productora y posteriormente como camarógrafa. Toma clases de fotografía en IFA, y con Daniel Tubío, Martín Siccardi y Marcos López. Participa en exposiciones y proyecciones, entre ellas junto al colectivo ISMO en la Ex Esma, el colectivo FARDO, la feria FUEGA. Proyecta visuales en la cúpula del CCK para Telescuela Técnica y es publicada en el Fotolibro Proyecciones Corporales de Plataforma Mínima(Chile) y varias revistas internacionales en su versión impresa y online como Keyi Magazine, Mob Journal, Art of portrait entre otras. También trabaja como directora de fotografía en videoclips de artistas locales como Leo García y Gabo Ferro, diversos cortometrajes, el largometraje Ochenta (2015), realiza piezas audiovisuales para la obra teatral Las voces del río, videos institucionales, recitales, documentales, etc. <br> <br>Durante el ASPO realiza una serie de videopoemas  y desarrolla un proyecto fotográfico personal en clínica de obra El ojo errante titulado La Corporación. Participa de diversas muestras virtuales para distintos organismos entre ellos Fundación Bunge y Born y Mutual del personal San Cristóbal. A comienzos del 2021 participa con la serie Escombro Residual de una muestra colectiva en la Sala Municipal Lidaura Chapitel en San Martín de los Andes y en octubre exhibe sus obras en la feria BADA en La Rural, Buenos Aires.</p>
+          </section>
+          <section class="fondo-section">
+            <h3 class="estilo-h3">Sobre las obras</h3>
+            <p class="letras-p">Serie La Corporación <br> <br>Para cuando realizo la serie de autorretratos me encuentro cumpliendo el ASPO en un departamento de dos ambientes en el barrio de Villa Crespo de la Ciudad Autónoma de Buenos Aires. Como trabajo en un estudio de televisión y los programas comienzan a transmitirse desde casa, no tengo tareas para realizar de forma remota, mi trabajo es esencialmente presencial. Mis obligaciones laborales se ven completamente suspendidas y de pronto poseo tiempo de sobra para dedicarle a todas las actividades que antes había postergado.<br> <br>Seteo alarmas para despertarme temprano y darle provecho a ese tiempo libre que en mi vida adulta nunca había experimentado. Lleno la agenda de actividades, me exijo como nunca a darle provecho, almuerzo en el escritorio, productividad full time. Compro por internet el libro “El aroma del tiempo” de Byung-Chul Han, filósofo surcoreano y lo devoro. Han dice que “La hiperkinesia cotidiana arrebata a la vida humana cualquier elemento contemplativo, cualquier capacidad para demorarse.”<br> <br>Y justo yo que no admito demoras, en cada interludio busco la optimización de procedimientos. Trabajo mi propia meritocracia en pos de algún rédito ficticio. Ahora es imposible escapar de mí. Tensión y lucha.<br> <br>Byung-Chul Han, en su otro libro "La sociedad del cansancio" actualiza la interpretación disciplinaria de la sociedad de Foucault diciendo que "La sociedad del siglo XXI ya no es disciplinaria, sino una sociedad de rendimiento. Tampoco sus habitantes se llaman ya ‘sujetos de obediencia’, sino ‘sujetos de rendimiento’. Estos sujetos son emprendedores de sí mismos" Ante la suspensión de aquello exterior que ordenaba mi tiempo, me convierto en mi propia corporación que me exprime sin descanso entre muebles y paredes de los que no puedo escapar. Según el filósofo, esta presión por el rendimiento genera depresión en la sociedad actual "En realidad, lo que enferma no es el exceso de responsabilidad e iniciativa, sino el imperativo del rendimiento, como nuevo mandato de la sociedad del trabajo tardomoderna." <br> <br>No puedo estar en mi casa sin ocupar ese “tiempo libre”, ¿Alguna vez he experimentado la improductividad? <br> <br>“¿Cuál será el andar del futuro? La época del peregrino o de la marcha ha quedado atrás para siempre. Volverá el hombre a marchar sobre la tierra tras una breve fase de merodeo? ¿O abandonará definitivamente el peso de la tierra y del trabajo y descubrirá la ligereza de deambular, el vagabundear flotante en el ocio, es decir el aroma de un tiempo flotante?”</p>
+          </section>
+          <section class="fondo-section">
+            <h3 class="estilo-h3">Redes del artista </h3>
+            <p class="redes"><a href="https://www.instagram.com/muni.foto/" target="_blank" class="letras-p">Instagram</a></p>
+            <p class="redes"><a href="https://marianelamuniz.myportfolio.com/" target="_blank" class="letras-p">Portfolio</a></p>
+          </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <p>Seguinos en Instragram <a href="https://www.instagram.com/new_file_gallery_/">@new_file_gallery_</a></p>
+    </footer>
+  </body>
+</html>
