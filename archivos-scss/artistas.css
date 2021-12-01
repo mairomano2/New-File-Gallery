@@ -91,7 +91,6 @@ body {
 .fondoh2 {
   font-family: 'Major Mono Display', monospace;
   font-size: 6rem;
-  font-weight: lighter;
   background-color: rgba(255, 255, 255, 0.219);
   padding: 20px;
   margin: 0px;
@@ -192,11 +191,38 @@ footer a:hover {
 }
 
 .contenedor-padre .contenedor-hijo {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
   font-family: 'Roboto Mono', monospace;
   font-size: 17px;
   padding: 10px;
   border-radius: 7px;
+}
+
+.contenedor-padre .contenedor-hijo .artista-individual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contenedor-padre .contenedor-hijo .badge {
+  margin: 15px;
 }
 
 .contenedor-padre .contenedor-hijo img {
@@ -277,6 +303,12 @@ footer a:hover {
   .fondoh2 {
     font-size: 3.2rem;
     padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .artista-individual {
+    margin: 10px;
   }
 }
 
