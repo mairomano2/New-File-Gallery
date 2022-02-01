@@ -100,8 +100,8 @@ html {
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
   background-color: background #39e174;
-  background: -webkit-gradient(linear, left top, left bottom, from(#39e174), color-stop(51%, #3c73d7), to(#833ed9));
-  background: linear-gradient(180deg, #39e174 0%, #3c73d7 51%, #833ed9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#39e174), color-stop(50%, #3c73d7), to(#833ed9));
+  background: linear-gradient(180deg, #39e174 0%, #3c73d7 50%, #833ed9 100%);
 }
 
 body {
