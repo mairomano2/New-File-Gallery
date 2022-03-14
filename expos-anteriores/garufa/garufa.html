@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="desciption" content="Toda la información de New File Gallery para conocernos mejor">
     <meta name="keywords" content="galería de arte, arte, galería, artistas, artes visuales, musica, poesía, fotografía, collage, video, arte digital">
-    <title> New File - Exposición acutal</title>
+    <title> New File Gallery - Exposición acutal</title>
 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -21,45 +21,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
     
-    <link rel="stylesheet" href="./archivos-scss/expos-actuales.css">
+    <link rel="stylesheet" href="../../archivos-scss/expos-actuales.css">
   </head>
   <body class="display">
-    <header> 
-      <nav class="navbar navbar-expand-lg fondo-nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
-            </svg>
-          </a>
-          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon custom-toggler"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link items item-shop" href="new-file-shop/new-file-shop.html">New File Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link items item-nosotros" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link items item-open-call" href="open-call.html">Open call</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link items item-exposiciones dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Exposiciones
-                </a>
-                <ul class="dropdown-menu fondo-nav" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item items" href="expos-actuales.html">Exposición actual</a></li>
-                  <li><a class="dropdown-item items" href="artistas.html">Exposición permanente</a></li>
-                  <li><a class="dropdown-item items" href="./expos-anteriores/expos-anteriores.html">Exposiciones anteriores</a></li>
+        <header> 
+        <nav class="navbar navbar-expand-lg fondo-nav" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../../index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                </svg>
+              </a>
+              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon custom-toggler"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link items item-shop" href="../../new-file-shop/new-file-shop.html">New File Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link items item-nosotros" href="../../nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link items item-open-call" href="../../open-call.html">Open call</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link items item-exposiciones dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Exposiciones
+                    </a>
+                    <ul class="dropdown-menu fondo-nav" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item items" href="../../artistas.html">Exposición permanente</a></li>
+                      <li><a class="dropdown-item items" href="../expos-anteriores.html">Exposiciones temporales</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -67,7 +66,7 @@
       <div class="contenedor-padre">
           <div class="contenedor-hijo">
             <section class="iframe fondo-section">
-              <div id="carousel1" class="carousel slide posicion-carousel" data-bs-ride="carousel" data-bs-interval="false">
+              <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -79,25 +78,25 @@
               </div>
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="artistas/garufa/17.jpg" class="d-block w-1 img" alt="Autoretrato digital de le artista">
+                    <img src="17.jpg" class="d-block w-1 img" alt="Autoretrato digital de le artista">
                   </div>
                   <div class="carousel-item">
-                    <img src="artistas/garufa/10nnmmm.jpg" class="d-block w-1 img" alt="Ilustración digital de varios roostros con pelo corto">
+                    <img src="10nnmmm.jpg" class="d-block w-1 img" alt="Ilustración digital de varios roostros con pelo corto">
                   </div>
                   <div class="carousel-item">
-                    <img src="artistas/garufa/2e1.jpg" class="d-block w-1 img" alt="Ilustración digital de un brazo roto con la incripción 'crack' al lado">
+                    <img src="2e1.jpg" class="d-block w-1 img" alt="Ilustración digital de un brazo roto con la incripción 'crack' al lado">
                   </div>
                   <div class="carousel-item">
-                    <img src="artistas/garufa/charlyh.jpg" class="d-block w-1 img" alt="Ilustración digital de dos personas abrazadas junto con la difinición de la palabra hogar">
+                    <img src="charlyh.jpg" class="d-block w-1 img" alt="Ilustración digital de dos personas abrazadas junto con la difinición de la palabra hogar">
                   </div>
                   <div class="carousel-item">
-                    <img src="artistas/garufa/est.jpg" class="d-block w-1 img" alt="Autoretrato digital de le artista">
+                    <img src="est.jpg" class="d-block w-1 img" alt="Autoretrato digital de le artista">
                   </div>
                   <div class="carousel-item">
-                    <img src="artistas/garufa/on.jpg" class="d-block w-1 img" alt="Ilustración digital de un brazo roto con la incripción 'crack' al lado">
+                    <img src="on.jpg" class="d-block w-1 img" alt="Ilustración digital de un brazo roto con la incripción 'crack' al lado">
                   </div>
                   <div class="carousel-item">
-                    <img src="artistas/garufa/walsh.jpeg" class="d-block w-1 img" alt="Ilustración digital de dos personas abrazadas junto con la difinición de la palabra hogar">
+                    <img src="walsh.jpeg" class="d-block w-1 img" alt="Ilustración digital de dos personas abrazadas junto con la difinición de la palabra hogar">
                   </div>          
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
